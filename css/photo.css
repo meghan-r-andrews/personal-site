@@ -202,9 +202,10 @@ box-sizing: border-box;
   }
 
   p {
-    max-width: 800px;
-    padding: 10px;
-    margin: 0;
+    max-width: 850px;
+    padding: 20px;
+
+    line-height: 1.4;
   }
 
   .photo-gallery {
@@ -234,7 +235,7 @@ box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
 
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   .project-name-description h1 {
@@ -243,12 +244,24 @@ box-sizing: border-box;
     text-align: center;
   }
 
+  .project-name-description p {
+    position: relative;
+    bottom: 15px;
+    margin-bottom: 0;
+  }
+
   .project-photo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
+
+    margin: 0;
+
+    position: relative;
+    bottom: 15px;
+
   }
 
 .row {
