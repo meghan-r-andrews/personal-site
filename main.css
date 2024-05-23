@@ -102,9 +102,13 @@ box-sizing: border-box;
   }
 
   .homepage-disclaimer {
-    max-width: 650px;
+
+
+    max-width: 795px;
     padding: 20px;
+
     background-color: #cfcfcf;
+
     margin-left: 20px;
     margin-right: 20px;
   }
