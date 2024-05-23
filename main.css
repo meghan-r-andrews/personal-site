@@ -137,5 +137,11 @@ box-sizing: border-box;
     }
   }
 
+  @media (max-width: 500px) {
+    .homepage-disclaimer {
+        min-width: 300px;
+    }
+  }
+
   
 
