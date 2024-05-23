@@ -101,6 +101,14 @@ box-sizing: border-box;
     font-size: 1.6rem;
   }
 
+  .homepage-disclaimer {
+    max-width: 650px;
+    padding: 20px;
+    background-color: #cfcfcf;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .intro {
     padding-top: 20px; 
     padding-left: 20px;
@@ -124,5 +132,6 @@ box-sizing: border-box;
         display: none;
     }
   }
+
   
 
