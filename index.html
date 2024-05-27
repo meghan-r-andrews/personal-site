@@ -10,48 +10,54 @@
         <link rel="icon" type="image/png" href="pics/icons/favicon.png">
     </head>
     
-    <body>
+
+<body>
+
+    <header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
 
         <div class="intro">
 
+            <h1>Meghan Andrews</h1>
 
-        <h1>Meghan Andrews</h1>
+            <h2>designer / accessibility enthusiast  
+            </h2>
 
-        <h2>designer / accessibility enthusiast<br> </h2>
-
-        <h2 class="based-in"> based in Virginia at the moment
-        </h2>
+            <h2 class="based-in"> based in Virginia at the moment </h2>
 
 
-        <h3 class="contact-links"> 
-            <a class="contact-links" href="mailto:meghan.r.andrews@gmail.com">
-            <img class="email" src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;"></a> contact: meghan.r.andrews@gmail.com
-        </h3>
+            <h3 class="contact-links"> 
 
-        <h3 class="contact-links"> 
-            <img src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 4px;"> 
+                <a class="contact-links" href="mailto:meghan.r.andrews@gmail.com">
+                <img class="email" src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;"></a> contact: meghan.r.andrews@gmail.com</h3>
 
-            <a class="contact-links" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener"> are.na </a>
-        </h3>
+            <h3 class="contact-links"> 
+                <img src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 4px;"> 
 
-        <!-- <h3 class="contact-links"> 
-            <img src="pics/icons/instagram.png" alt="Instagram icon." style="width: 40px; height: 40px; position: relative; top: 4px;"> 
+                <a class="contact-links" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener"> are.na </a>
+            </h3>
 
-            <a class="contact-links" href="https://www.instagram.com/meghan.r.andrews/" target="_blank" rel="noreferrer noopener"> instagram </a>
-        </h3>  -->
+            <!-- <h3 class="contact-links"> 
+                <img src="pics/icons/instagram.png" alt="Instagram icon." style="width: 40px; height: 40px; position: relative; top: 4px;"> 
 
-        </div>
+                <a class="contact-links" href="https://www.instagram.com/meghan.r.andrews/" target="_blank" rel="noreferrer noopener"> instagram </a>
+            </h3>  -->
+
+            </div>
+
+        </header>
 
     </div>
+
+
+    <main>
 
         <ul>
             <li>Feel free to hire me &#9774; : 
                 <a href="https://www.meghanandrewsportfolio.com/" target="_blank" rel="noreferrer noopener">graphic design portfolio</a>
                 <p style="margin: 0;">*open to discussing freelance projects</p>
             </li>
-
-            <!-- <li>Freelance services I provide:
-            </li> -->
 
             <li>
                 <a href="html/photo.html">photos</a> <br>
@@ -72,16 +78,40 @@
         <img class="daisies" src="pics/photos/daisies.jpg" alt="Grainy, black and white film photo. Close-up shot of a field of little daisies.">
 
         <p class="homepage-disclaimer">
-            This website was hand-coded using HTML & CSS. <br><br>
+            This website is a container for creative projects that I want to remember / share. It was hand-coded using mostly HTML & CSS. (There's a teensy bit of Javascript that I snagged from <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank rel=noreferrer noopener">here</a>) <br><br>
             
-            If you're having any issues with the website or have some advice / suggestions towards my code or the website in general (especially in regards to making it more accessible!) please feel free to 
+            If you're having any issues with the website or have suggestions towards my code / the website in general (especially in regards to making it more accessible!) please feel free to 
 
             <a class="contact-links" href="mailto:meghan.r.andrews@gmail.com"> let me know!</a> <br><br>
             
-            This site is in an infant-like state and will grow / evole as I have the energy to tend to it. 
         </p>
 
+        
 
+    </main>
+
+
+<script>
+    // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>
 
     </body>
 </html>
