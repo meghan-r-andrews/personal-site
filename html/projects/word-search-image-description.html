@@ -78,6 +78,12 @@
         margin-left: 30px;
         /* margin-right: 10px; */
     }
+
+    video {
+        border-bottom: 3px solid black;
+  width: 100%;
+    }
+
         </style>
 
     </head>
@@ -106,7 +112,7 @@
 
             <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
 
-            <a class="show-hide-img-description-btn" href="word-search.html">Hide image descriptions</a>
+            <a class="show-hide-img-description-btn" href="word-search.html">Hide image / video descriptions</a>
 
             <div class="project-name-description">
 
@@ -138,7 +144,10 @@
                     </figure>
 
                     <figure>
-                        <img src="../../pics/projects/word-list.png" alt="Word List orignial file.">
+                        <video width="640" height="480" controls>
+                            <source src="word-list.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
 
                         <figcaption>
                             Word List. Word List is 16 page booklet with a white background and black text with use of a pink and blue gradient. <a href="https://docs.google.com/document/d/14Nnv06275oAtmqwL8-aBvZRHt-fTfhGLrgyCk4rnd_w/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Full transcript</a>
