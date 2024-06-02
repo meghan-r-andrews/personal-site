@@ -49,19 +49,18 @@
 
     </head>
     
+    
     <body>
 
         <header>
 
             <nav>
-
                 <a class="home" href="../index.html">
                     Home
                 </a>
-
             </nav>
 
-                    <h1 class="h1">photos</h1>
+            <h1 class="h1">photos</h1>
 
         </header>
 
@@ -70,6 +69,7 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
 
             <a class="show-hide-img-description-btn" href="photo.html">Hide image descriptions</a>
+
 
             <div class="photo-gallery">
 
@@ -87,6 +87,7 @@
                         Grainy, black and white film shot of an empty beach.
                     </figcaption>
                 </figure>
+
 
                 <figure>
                     <img  src="../pics/photos/road-by-ocean.png" alt="Road next to ocean.">
@@ -106,9 +107,8 @@
                 </figure>
 
 
-
                 <figure>
-                    <img  src="../pics/photos/water2.jpg" alt="Water.">
+                    <img src="../pics/photos/water2.jpg" alt="Water.">
                     
                     <figcaption>
                         Black and white film shot of rippled water. Sunlight bounces off the water and the ripples create a repetitive pattern, almost like snakeskin.
@@ -125,7 +125,6 @@
                 </figure>
 
 
-
                 <figure>
                     <img src="../pics/photos/chile3.jpg" alt="Hill.">
                     
@@ -134,16 +133,14 @@
                     </figcaption>
                 </figure>
 
-    
 
                 <figure>
                     <img  src="../pics/photos/grand-canyon2.jpg" alt="Grand Canyon.">
                     
                     <figcaption>
-                        Warm, rocky landscape belonging to the Grand Canyon. Zoomed in as far as my lens could zoom, the trees look as small as bugs. 
+                        Warm-toned, rocky landscape belonging to the Grand Canyon. Zoomed in as far as my lens could zoom, the trees look as small as bugs. 
                     </figcaption>
                 </figure>
-
 
 
                 <figure>
@@ -155,15 +152,13 @@
                 </figure>
 
 
-
                 <figure>
                     <img  src="../pics/photos/chile4.png" alt="Flamingos flying.">
                     
                     <figcaption>
-                        Distant shot of two pink flamingos flying through a vast, blue sky.
+                        Distant shot of two pink flamingos flying through a vast, empty, blue sky.
                     </figcaption>
                 </figure>
-
 
 
                 <figure>
@@ -177,7 +172,6 @@
                 </figure>
 
 
-
                 <figure>
                     <img  src="../pics/photos/chincoteague-horses.JPG" alt="Wild horses in Chincoteague.">
                     
@@ -185,7 +179,6 @@
                         Two wild horses walk through shallow water in a marsh. A great blue heron makes a cameo in the distant background.
                     </figcaption>
                 </figure>
-
 
 
                 <figure>
@@ -216,7 +209,7 @@
 
 
                 <figure>
-                    <img  src="../pics/photos/flower-fence.jpg" alt="Flower poking out between fence posts.">
+                    <img src="../pics/photos/flower-fence.jpg" alt="Flower poking out between fence posts.">
                     
                     <figcaption>
                         A small, pink flower with dark green leaves peeks through a dull, jade-green fence.
@@ -237,27 +230,25 @@
         </main>
 
         <script>
-            // Get the button:
-        let mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        } 
+      
+            let mybutton = document.getElementById("myBtn");
+            
+    
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
         </script>
-
 
     </body>
 </html>

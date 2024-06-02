@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Meghan Andrews - word search</title>
 
@@ -9,7 +10,7 @@
         <link rel="stylesheet" href="../../css/photo.css">
         <link rel="icon" type="image/png" href="../../pics/icons/favicon.png">
 
-        <style>
+    <style>
 
         main {
                 display: flex;
@@ -41,78 +42,88 @@
             } */
 
             /* img {
-        border: 2px solid;
-        margin: 20px;
-        margin-bottom: 30px;
-} */
+                border: 2px solid;
+                margin: 20px;
+                margin-bottom: 30px;
+                } */
 
-        img {
-        max-width: 100%;
-        border: none;
-        border-bottom: 3px solid;
-        margin: 0;
-    }
+                img {
+                max-width: 100%;
+                border: none;
+                border-bottom: 3px solid;
+                margin: 0;
+                }
 
-    img:hover {
-        pointer-events: none;
-    }
+                img:hover {
+                pointer-events: none;
+                }
 
-            figure {
-    background-color: white;
-    border: 3px solid;
-    max-width: 60%;
-    min-width: 310px;
-    }
+                figure {
+                background-color: white;
+                border: 3px solid;
+                max-width: 60%;
+                min-width: 310px;
+                }
 
-    /* figure:hover {
-        max-width: 70%;
-    } */
+                /* figure:hover {
+                    max-width: 70%;
+                } */
 
-    figcaption {
-        line-height: 1.3;
-        padding: 10px;
-        margin: 15px;
-    }
+                figcaption {
+                    line-height: 1.3;
+                    padding: 10px;
+                    margin: 15px;
+                }
 
-    p {
-        margin-left: 30px;
-        /* margin-right: 10px; */
-    }
+                p {
+                    margin-left: 30px;
+                    /* margin-right: 10px; */
+                }
 
-    video {
-        border-bottom: 3px solid black;
-  width: 100%;
-    }
+                video {
+                    border-bottom: 3px solid black;
+                    width: 100%;
+                }
 
-        </style>
+    </style>
 
-    </head>
+</head>
+
     
-    <body>
+<body>
 
-        <header>
+    <header>
 
             <div style="display: flex; justify-content: flex-start; gap: 10px;">
 
-                <a class="home" href="../../index.html">
-                    Home
-                </a>
+                <nav>
 
-                <a class="home" href="../other.html">
-                    back
-                </a>
+                    <a class="home" href="../../index.html">
+                        Home
+                    </a>
+
+                    <a class="home" href="../other.html">
+                        back
+                    </a>
+
+                </nav>
 
             </div>
 
-                <h1 class="h1 h1-other-projects">word search</h1>
+
+            <h1 class="h1 h1-other-projects">word search</h1>
 
         </header>
+
 
         <main>
 
             <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
 
+
             <a class="show-hide-img-description-btn" href="word-search.html">Hide image / video descriptions</a>
+
+
 
             <div class="project-name-description">
 
@@ -127,6 +138,7 @@
 
                 <div class="project-photo-container">
 
+
                     <figure>
                         <img class="img-mobile" src="../../pics/projects/wordsearch.jpg" alt="Giant printed word search.">
     
@@ -135,6 +147,7 @@
                         </figcaption>
                     </figure>
 
+
                     <figure>
                         <img src="../../pics/projects/word-search-pdf.png" alt="Word Search original file.">
 
@@ -142,6 +155,7 @@
                             Word Search. Word search has white background and black text. The words 'Word Search' are repeated 5 times at top of page. The word search is bordered on the left and right side with thin, vertical bars consisting of a pink and blue gradient.
                         </figcaption>
                     </figure>
+
 
                     <figure>
                         <video width="640" height="480" controls>
@@ -153,35 +167,36 @@
                             Word List. Word List is 16 page booklet with a white background and black text with use of a pink and blue gradient. <a href="https://docs.google.com/document/d/14Nnv06275oAtmqwL8-aBvZRHt-fTfhGLrgyCk4rnd_w/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Full transcript</a>
                         </figcaption>
                     </figure>
+
                 
                 </div>
 
-            </div>
+            </div> 
 
 
         </main>
 
-<script>
-    // Get the button:
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        <script>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+            let mybutton = document.getElementById("myBtn");
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-</script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
+
+        </script>
 
 
     </body>

@@ -16,14 +16,12 @@
         <header>
 
             <nav>
-
                 <a class="home" href="../index.html">
                     Home
                 </a>
-
             </nav>
 
-                    <h1 class="h1">photos</h1>
+            <h1 class="h1">photos</h1>
 
         </header>
 
@@ -32,6 +30,7 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
 
             <a class="show-hide-img-description-btn" href="photo-image-descriptions.html">Show image descriptions</a>
+
 
             <div class="photo-gallery">
 
@@ -72,7 +71,7 @@
 
                 <img src="../pics/photos/sheena-running.JPG" alt="Medium-sized golden retriever mix running through yard.">
 
-                <img  src="../pics/photos/little-dog-on-balcony.jpg" alt="A small, barking dog pokes its head out between the ornate metal posts of a balcony gate.">
+                <img src="../pics/photos/little-dog-on-balcony.jpg" alt="A small, barking dog pokes its head out between the ornate metal posts of a balcony gate.">
 
                 <img  src="../pics/photos/double-gato.jpg" alt="A sleeping cat curled up in a box filled with newspapers. A gold, waving cat figurine sits in a package next to the sleeping cat.">
 
@@ -92,25 +91,24 @@
 
 
         <script>
-            // Get the button:
-        let mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        } 
+         
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
+
         </script>
 
 
