@@ -8,6 +8,13 @@
             
         <link rel="stylesheet" href="main.css">
         <link rel="icon" type="image/png" href="pics/icons/favicon.png">
+        
+        <meta property="og:title" content="Meghan Andrews">
+        <meta property="og:description" content="designer / accessibility enthusiast">
+        <meta property="og:image" content="daisies.jpg">
+        <meta property="og:url" content="www.meghanandrews.me">
+        <meta property="og:type" content="website">
+
     </head>
     
 
@@ -44,11 +51,11 @@
                 <a class="contact-links" href="https://www.instagram.com/meghan.r.andrews/" target="_blank" rel="noreferrer noopener"> instagram </a>
             </h3>  -->
 
-            </div>
+        </div>
 
-        </header>
+    </header>
 
-    </div>
+    <!-- </div> -->
 
 
     <main>
@@ -83,35 +90,32 @@
             If you're having any issues with the website or have suggestions towards my code / the website in general (especially in regards to making it more accessible!) please feel free to 
 
             <a class="contact-links" href="mailto:meghan.r.andrews@gmail.com"> let me know!</a> <br><br>
-            
         </p>
-
-        
 
     </main>
 
 
-<script>
-    // Get the button:
-let mybutton = document.getElementById("myBtn");
+    <script>
+        
+        let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        window.onscroll = function() {scrollFunction()};
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-</script>
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
 
-    </body>
+        function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        } 
+
+    </script>
+
+</body>
 </html>
