@@ -376,8 +376,7 @@ video {
     }
 
   }
-
-  @media (max-width: 300px) {
+  @media (max-width: 200px) {
 
 
     .h1-other-projects {
