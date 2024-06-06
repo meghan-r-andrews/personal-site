@@ -51,6 +51,18 @@ box-sizing: border-box;
     gap: 5px;
   }
 
+  figcaption {
+    overflow: visible
+  }
+
+  figure {
+    overflow: visible
+  }
+
+  figure:hover {
+    cursor:crosshair;
+  }
+
 
   h1 {
     font-size: 2.2rem;
@@ -159,6 +171,8 @@ box-sizing: border-box;
     margin: 10px;
 
     transition: .15s ease;
+
+    overflow: visible;
   }
 
 
