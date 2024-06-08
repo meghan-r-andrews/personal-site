@@ -31,6 +31,10 @@ box-sizing: border-box;
 
   }
 
+  .are.na, .instagram {
+    display: flex;
+  }
+
   .based-in {
     font-size: 1.3rem;
   }
@@ -40,6 +44,11 @@ box-sizing: border-box;
     font-family: 'nimbus sans', sans-serif;
     font-size: 1.5rem;
     margin: 10px;
+  }
+
+  .contact-links {
+    position: relative; 
+    bottom: 2px;
   }
 
   .contact-links a:visited{
@@ -53,6 +62,8 @@ box-sizing: border-box;
   .contact-links a:hover {
     color: black;
     cursor: pointer;
+
+    margin: 0;
   }
 
   .contact-links:hover {
@@ -168,6 +179,15 @@ box-sizing: border-box;
     font-weight:bold;
   }
 
+  .social-container {
+    display: flex;
+    gap: 40px;
+  }
+
+
+
+/* 
+_________________________________________________ */
 
 
   @media (max-width: 1250px) {
@@ -175,6 +195,7 @@ box-sizing: border-box;
         display: none;
     }
   }
+
 
   @media (max-width: 500px) {
     .homepage-disclaimer {
