@@ -175,6 +175,10 @@ box-sizing: border-box;
     overflow: visible;
   }
 
+  img:hover {
+    cursor: crosshair;
+  }
+
 
   .img-vertical {
     width: 100%;
