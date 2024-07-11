@@ -184,6 +184,10 @@ box-sizing: border-box;
     gap: 40px;
   }
 
+  ul {
+    margin-left: 16px;
+  }
+
 
 
 /* 
