@@ -32,7 +32,8 @@ box-sizing: border-box;
   }
 
   body {
-    background-color: #dde9e5;
+    /* background-color: #dde9e5; */
+    background-color: #e6fdf6;
     font-family: 'nimbus sans', sans-serif;
     font-size: 1.5rem;
     margin: 0;
