@@ -52,6 +52,48 @@ box-sizing: border-box;
     gap: 5px;
   }
 
+  .dark {
+    background-color: #323232;
+  }
+
+  .dark-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .dark-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(226, 225, 225);
+
+    border-radius: 10px;
+    border: 1.25px solid;
+    outline: 1.2px solid white;
+
+    box-shadow:2px 2px 5px rgb(50, 50, 50);
+  }
+
+  .dark-button button:active {
+    transform:translate(1px);
+  }
+
+  .dark-button button:hover {
+    background-color: yellow;
+    cursor: pointer;
+    border: 2px solid;
+  }
+
+  .dark figure {
+    outline: 3px solid white;
+  }
+
+  .dark-mode-icon {
+    border: none;
+  }
+
   figcaption {
     overflow: visible
   }
@@ -165,8 +207,6 @@ box-sizing: border-box;
     max-width: 40%;
     max-height: 40%;
 
-    /* max-width: 800px; */
-
     min-width: 300px;
     min-height: 200px;
     margin: 10px;
@@ -176,9 +216,9 @@ box-sizing: border-box;
     overflow: visible;
   }
 
-  img:hover {
+  /* img:hover {
     cursor: crosshair;
-  }
+  } */
 
 
   .img-vertical {
@@ -238,8 +278,8 @@ box-sizing: border-box;
     display: none; 
 
     position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
+    bottom: 20px;
+    right: 20px;
 
     z-index: 99; 
 
@@ -402,4 +442,14 @@ video {
   max-width: 98vw;
   max-height: 48%;
 }
+}
+
+@media (max-width: 500px) {
+
+  .dark-button {
+    display: none;
+  }
+
+  
+  
 }

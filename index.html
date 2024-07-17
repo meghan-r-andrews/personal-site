@@ -22,19 +22,16 @@
 
     <header>
 
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>  -->
-
         <div class="intro">
             
             <h1>Meghan Andrews</h1>
 
-            <h2 style="font-size: 2rem;">designer / accessibility enthusiast
+            <h2 style="font-size: 2rem;"> designer / accessibility enthusiast
             </h2>
 
             <h2 class="based-in"> based in Virginia at the moment </h2>
 
-
-            <h3 class="contact-links"> 
+            <h3 class="contact-links" style="margin-top: 6px;"> 
 
                 <a class="contact-links" href=mailto:“meghan.r.andrews@gmail.com”>
                 <img class="email" src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;"></a>
@@ -47,15 +44,23 @@
                 <div class="social-container">
 
                     <div class="are.na">
-                        <img src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 5px;"> 
+                        <img class="logo" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
 
-                        <a class="contact-links" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="position: relative; top: 1px; font-size: smaller;"> are.na </a>
+                        <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                            <img class="logo-mobile" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+                        </a>
+
+                        <a class="contact-links social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="font-size: smaller;"> are.na </a>
                     </div>
 
                     <div class="are.na">
-                        <img src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                        <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
 
-                        <a class="contact-links" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 8px; font-size: smaller;">pinterest</a>
+                        <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                            <img class="logo-mobile" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                        </a>
+
+                        <a class="contact-links social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 7px; right: 4px;">pinterest</a>
                     </div>
 
                 </div>
@@ -65,8 +70,6 @@
         </div>
 
     </header>
-
-    <!-- </div> -->
 
 
     <main>
@@ -97,37 +100,28 @@
 
         <p class="homepage-disclaimer">
             This website was hand-coded using mostly HTML & CSS. (There's a teensy bit of Javascript that I snagged from <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank rel=noreferrer noopener">here</a>) <br><br>
-
-            <!-- This website was hand-coded using HTML, CSS and Javascript. <br> <br> -->
             
             If you're having any issues with the website or have suggestions towards my code / the website in general (especially in regards to making it more accessible!) please feel free to 
 
-            <a class="contact-links" href=mailto:“meghan.r.andrews@gmail.com”> let me know!</a>
+            <a class="contact-links let-me-know" href=mailto:“meghan.r.andrews@gmail.com” style="color: blue;"> let me know!</a>
         </p>
+
+        <!-- <div class="dark-button" id="darkMode" onclick="dark()">
+            <button>
+                <img src="pics/icons/dark-mode.png" alt="Dark-mode/light-mode icon." style="padding: 5px; width: 50px; height: 50px;">
+            </button>
+        </div> -->
 
     </main>
 
+    <!-- <script>
+        function dark() {
+            var menu = document.getElementById("darkMode");
 
-    <script>
-        
-        let mybutton = document.getElementById("myBtn");
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+            menu.classList.toggle("active");
+            document.body.classList.toggle ("dark");
         }
-        }
-
-        function topFunction() {
-        document.body.scrollTop = 0; 
-        document.documentElement.scrollTop = 0; 
-        } 
-
-    </script>
+    </script> -->
 
 </body>
 </html>

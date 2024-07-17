@@ -14,6 +14,10 @@
                 max-width: 50%;
                 max-height: 50%;
                 }
+
+                .dark img {
+                border: 2px solid white;
+                }
         </style>
 
     </head>
@@ -42,13 +46,6 @@
 
             <div class="photo-gallery">
 
-                <!-- <div class="img-vertical row">
-
-                    <img src="../pics/photos/window-bw.jpg" alt="Grainy, black and white film shot. An open window amongst a black backdrop displays the side of a hill covered in greenery and various plants.">
-
-                    <img src="../pics/photos/waterfall1.jpg" alt="Black and white film shot of a waterfall cascading off a rocky cliff.">
-                </div> -->
-
                 <img src="../pics/photos/beach-bw.jpg" alt="Grainy, black and white film shot of an empty beach.">
 
                 <img  src="../pics/photos/road-by-ocean.png" alt="Empty, paved road in front of the ocean. Warm-toned shrubbery slightly creeps in front of the ocean view.">
@@ -57,17 +54,11 @@
 
                 <img  src="../pics/photos/water2.jpg" alt="Black and white film shot of rippled water. Sunlight bounces off the water and the ripples create a repetitive pattern, almost like snakeskin.">
 
-                <!-- <img  src="../pics/photos/water.jpg" alt="Black and white film shot of calm, glassy water."> -->
-
                 <img src="../pics/photos/chile5.png" alt="Snow lays at the bottom of a mountain and is reflected softly into calm, still, neighboring water.">
 
                 <img src="../pics/photos/chile3.jpg" alt="Snow-covered hill with yellow grass poking through underneath a blue sky.">
 
-                <!-- <img  src="../pics/photos/chile1.png" alt="A brown, snow-dusted mountain sits under a blue sky. At the base of the mountain is a field of warm-toned, yellow grass."> -->
-
                 <img  src="../pics/photos/grand-canyon2.jpg" alt="Distant shot of a warm-toned, rocky landscape in the Grand Canyon.">
-
-                <!-- <img src="../pics/photos/grand-canyon.png" alt="A distant shot of the grand canyon resembles a pattern."> -->
 
                 <img  src="../pics/photos/little-trees.JPG" alt="Warm-toned, rocky landscape. Tiny trees, shot from afar, resemble specks of dirt or dust.">
 
@@ -87,13 +78,13 @@
 
                 <img src="../pics/photos/tile-wall.JPG" alt="Patterned, tiled wall in shades of blue with small yellow tiles sprinkled throughout.">
 
-                <!-- <img  src="../pics/photos/chain-link-fence.jpg" alt="Close-up, black and white shot of a chain-link fence snug against a cement wall. The shadows of the chain link fence on the cement create a repetitive pattern, lace-like."> -->
-
-                <!-- <img src="../pics/photos/five-star.jpg" alt="Close-up shot of a worn, blue sign with rust poking through contains peeling, white letters that read 'Five star'.">  -->
-
-                <!-- <img src="../pics/photos/wall.jpg" alt="Geometric, symmetrical shot of a bright coral painted brick building."> -->
-
             </div>
+
+            <!-- <div class="dark-button" id="darkMode" onclick="dark()">
+                <button>
+                    <img class="dark-mode-icon" src="../pics/icons/dark-mode.png" alt="Dark-mode/light-mode icon." style="min-width: 40px; min-height: 40px; border: none;">
+                </button>
+            </div> -->
 
         </main>
 
@@ -117,6 +108,15 @@
             document.documentElement.scrollTop = 0; 
             } 
 
+        </script>
+
+        <script>
+            function dark() {
+                var menu = document.getElementById("darkMode");
+
+                menu.classList.toggle("active");
+                document.body.classList.toggle ("dark");
+            }
         </script>
 
 

@@ -225,6 +225,13 @@
 
             </div>
 
+
+            <!-- <div class="dark-button" id="darkMode" onclick="dark()">
+                <button>
+                    <img class="dark-mode-icon" src="../pics/icons/dark-mode.png" alt="Dark-mode/light-mode icon." style="padding: 5px; min-width: 40px; min-height: 40px; border: none;">
+                </button>
+            </div> -->
+
         </main>
 
         <script>
@@ -246,6 +253,15 @@
             document.body.scrollTop = 0; 
             document.documentElement.scrollTop = 0; 
             } 
+        </script>
+
+        <script>
+            function dark() {
+                var menu = document.getElementById("darkMode");
+
+                menu.classList.toggle("active");
+                document.body.classList.toggle ("dark");
+            }
         </script>
 
     </body>
