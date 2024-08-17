@@ -1,0 +1,39 @@
+* { 
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'nimbus sans';
+    src: url('fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
+          url('fonts/nimbussanl-reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color: #191919;
+    color: #ffffff;
+
+    font-family: 'nimbus sans';
+    margin: 15px;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+  }
+
+.light-mode-button {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+  .light-mode-icon {
+    width: 35px;
+  }
+
+

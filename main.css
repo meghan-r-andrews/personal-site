@@ -127,7 +127,7 @@ box-sizing: border-box;
   }
 
   .dark-button button:hover {
-    background-color: yellow;
+    background-color: #202020;
     width: 70px;
     height: 60px;
 
@@ -260,29 +260,30 @@ _________________________________________________ */
 
 
   @media (max-width: 500px) {
-    .homepage-disclaimer {
-        min-width: 300px;
-    }
+    
+      .homepage-disclaimer {
+          min-width: 300px;
+      }
 
-    .dark-button {
-      display: none;
-    }
+      .dark-button {
+        display: none;
+      }
 
-    .logo {
-      display: none;
-    }
+      .logo {
+        display: none;
+      }
 
-    .logo-mobile {
-      display: inline-block;
-    }
+      .logo-mobile {
+        display: inline-block;
+      }
 
-    .social-container {
-      gap: 10px;
-    }
+      .social-container {
+        gap: 10px;
+      }
 
-    .social-mobile {
-      display: none;
-    }
+      .social-mobile {
+        display: none;
+      }
 
   }
 

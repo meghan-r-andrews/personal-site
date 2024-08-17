@@ -81,7 +81,7 @@ box-sizing: border-box;
   }
 
   .dark-button button:hover {
-    background-color: yellow;
+    background-color: #202020;
     cursor: pointer;
     border: 2px solid;
   }
