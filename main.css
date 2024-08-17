@@ -175,7 +175,7 @@ box-sizing: border-box;
   .homepage-disclaimer {
 
 
-    max-width: 46vw;
+    max-width: 48vw;
     z-index: 30;
     padding: 20px;
 
@@ -183,6 +183,7 @@ box-sizing: border-box;
 
     margin-left: 20px;
     margin-right: 20px;
+
   }
 
   .intro {
