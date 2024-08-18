@@ -118,6 +118,14 @@
 
             </div>
 
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+
 
         </main>
 
@@ -144,6 +152,16 @@
             } 
 
         </script>
+
+<script>
+    function dark() {
+        var menu = document.getElementById("darkMode");
+
+        menu.classList.toggle("active");
+        document.body.classList.toggle ("dark");
+    }
+</script>
+
 
     </body>
 </html>
