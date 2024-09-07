@@ -180,20 +180,24 @@ box-sizing: border-box;
 
     background-color: #dadada;
 
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
+    margin: 50px 20px 30px 20px;
 
     font-style: italic;
-
+    font-size: 1.1rem; 
+    font-weight: 100;
   }
 
-  .intro {
-    padding-top: 20px; 
-    padding-left: 20px;
-    padding-right: 20px;
 
-    max-width: 680px;
+  .intro {
+    margin-top: 20px; 
+   margin-left: 20px;
+margin-right: 20px;
+padding: 2px 2px 0 2px;
+
+    max-width: 655px;
+
+    background-color: white;
+    border: 2px solid black;
   }
 
   li {
@@ -257,7 +261,7 @@ box-sizing: border-box;
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 30px;
   }
   
   /* Hide default HTML checkbox */
