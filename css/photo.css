@@ -111,9 +111,9 @@ box-sizing: border-box;
     overflow: visible
   }
 
-  figure:hover {
+  /* figure:hover {
     cursor:crosshair;
-  }
+  } */
 
 
   h1 {
@@ -225,9 +225,9 @@ box-sizing: border-box;
     overflow: visible;
   }
 
-  /* img:hover {
+  img:hover {
     cursor: crosshair;
-  } */
+  }
 
 
   .img-vertical {
