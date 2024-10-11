@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meghan Andrews - word search</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../../css/photo.css">
+        <link rel="icon" type="image/png" href="../../pics/icons/favicon.png">
+
+        <style>
+
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                border: 2px solid;
+                margin: 20px;
+                margin-bottom: 30px;
+
+                max-width: 50%;
+                max-height: 50%;
+
+                min-width: 270px;
+                min-height: 170px;
+            }
+
+        </style>
+
+    </head>
+    
+
+    <body>
+
+        <header>
+
+                <nav style="display: flex; justify-content: flex-start; flex-direction: row; gap: 10px;">
+
+                    <a class="home" href="../../index.html">
+                        Home
+                    </a>
+
+                    <a class="home" href="../other.html">
+                        back
+                    </a>
+
+                </nav>
+
+
+                <h1 class="h1 h1-other-projects">word search</h1>
+
+        </header>
+
+
+        <main>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
+
+
+            <a class="show-hide-img-description-btn" href="word-search-image-description.html">Show image / video descriptions</a>
+
+
+            <div class="project-name-description">
+
+                <h1 class="h1-other">Word Search</h1>
+
+                <p class="p-other">5 ft. by 5 ft. printed word search with printed half-letter sized word list. The word list is part of an episode of the TV show <i>Grey's Anatomy.</i></p>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-photo-container">
+
+                    <img src="../../pics/projects/wordsearch.jpg" alt="5 foot by 5 foot printed word search hangs on a wall in a classroom next to a basket that contains a printed booklet that reads 'Word List'.">
+
+                    <img src="../../pics/projects/word-search-pdf.png" alt="Word Search original file.">
+
+                    <!-- <img src="word-list/word list.png" alt=""> -->
+
+                    <video width="640" height="480" controls style="margin-bottom: 30px; margin-top: 20px;">
+                        <source src="word-list.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- <img src="../../pics/projects/word-list.png" alt="Word List orignial file. Word List is 16 page booklet with a white background and black text with use of a pink and blue gradient."> -->
+
+                    <a href="https://docs.google.com/document/d/14Nnv06275oAtmqwL8-aBvZRHt-fTfhGLrgyCk4rnd_w/edit" target="_blank" rel="noreferrer noopener">Full transcript</a>
+                
+                </div>
+                
+            </div>
+
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+
+
+        </main>
+
+
+    <script>
+        
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+
+        function topFunction() {
+          document.body.scrollTop = 0; 
+          document.documentElement.scrollTop = 0; 
+        } 
+
+    </script>
+
+
+    </body>
+</html>

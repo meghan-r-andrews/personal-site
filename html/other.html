@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meghan Andrews - other projects</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../css/photo.css">
+        <link rel="icon" type="image/png" href="../pics/icons/favicon.png">
+
+        <style>
+
+            img {
+                border: 2px solid;
+                margin: 20px;
+                margin-bottom: 30px;
+
+                max-width: 50%;
+                max-height: 50%;
+
+                min-width: 270px;
+                min-height: 170px;
+            }
+
+        </style>
+
+    </head>
+
+    
+    <body>
+
+        <header>
+
+            <nav>
+                <a class="home" href="../index.html">
+                    Home
+                </a>
+            </nav>
+
+                <h1 class="h1">other projects</h1>
+
+        </header>
+
+
+        <main>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
+
+
+            <a class="show-hide-img-description-btn" href="other-image-descriptions.html">Show image descriptions</a>
+
+
+            <div class="project">
+
+                <img class="img-mobile" src="../pics/projects/wordsearch.jpg" alt="5 foot by 5 foot printed word search hangs on a wall next to a basket that contains a printed booklet that reads 'Word List'."> <br>
+
+                <a href="../html/projects/word-search.html" style="margin-top: 15px;">Word Search</a> 
+
+                <p class="p-other">5 ft. by 5 ft. printed word search with printed half-letter sized word list. The word list is part of an episode of the TV show <i>Grey's Anatomy.</i></p>
+
+            </div>
+
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+
+        </main>
+
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+            
+    
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
+
+        </script>
+
+    </body>
+</html>

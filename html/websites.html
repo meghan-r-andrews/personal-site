@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meghan Andrews - web design</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../css/photo.css">
+        <link rel="icon" type="image/png" href="../pics/icons/favicon.png">
+
+        <style>
+
+            img {
+                border: 2px solid;
+                margin: 20px;
+                margin-bottom: 30px;
+
+                max-width: 50%;
+                max-height: 50%;
+                
+                /* min-width: 270px;
+                min-height: 170px; */
+            }
+
+        </style>
+
+    </head>
+
+    
+    <body>
+
+        <header>
+
+            <nav>
+                <a class="home" href="../index.html">
+                    Home
+                </a>
+            </nav>
+
+                <h1 class="h1">web design</h1>
+
+        </header>
+
+
+        <main>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
+
+
+            <a class="show-hide-img-description-btn" href="websites-image-descriptions.html">Show image descriptions</a>
+
+
+            <div class="project">
+
+                <img class="img-mobile" src="../projects/websites/los-colores.png" alt="Screenshot of a website. Background color is a soft-yellow. Title reads 'Los colores'. Instructions read 'Learn / study the colors in spanish. Hover your mouse over each square to see / hear the spanish word for that color'. 5 colored squares rest below instructions."> <br>
+
+                <a href="https://meghan-r-andrews.github.io/los-colores/" target="_blank" rel="noreferrer noopener">Los colores</a>
+
+                <p class="medium">
+                    <i>
+                        HTML, CSS, Javascript
+                    </i>
+                </p> 
+
+                <p>A website where you can learn / study the colors in Spanish.</p>
+
+            </div>
+
+
+            <div class="project">
+
+                <img class="img-mobile" src="../projects/websites/one-thousand-words/01.png" alt="Screenshot of a website. A collage of photos found in magazines are displayed along with the title that reads '1,000 words, a website about alt text / image description'. A menu sits at the bottom of the page."> <br>
+
+                <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener">1,000 words</a> 
+
+                <p class="medium">
+                    <i>
+                        HTML, CSS, Javascript
+                    </i>
+                </p> 
+
+                <p>A website about alt text / image description. </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <img class="img-mobile" src="../projects/websites/plants/03.png" alt="Website screenshot with soft pink background. Title reads 'Plants seen in / near Richmond, Virginia. A gallery of photos of plants sits below a bar with two columns that read 'Identified' and 'unidentified'."> <br>
+
+                <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">Plants</a> 
+
+                <p class="medium">
+                    <i>
+                        HTML, CSS, Javascript
+                    </i>
+                </p> 
+
+                <p>A website about plants / plant identification. </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <img class="img-mobile" src="../projects/websites/structure/01.png" alt="Screenshot of a website with large piano keys sprawled across the screen. Spotify embeds sit at the bottom of each piano key and song lyrics as well as sound descriptions sit below the keys."> <br>
+
+                <a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noreferrer noopener">Structure</a> 
+
+                <p class="medium">
+                    <i>
+                        HTML, CSS
+                    </i>
+                </p> 
+
+                <p>Virtual keyboard / playlist / some of my favorite lip syncs from the show <i>Ru Paul's Drag Race.</i> </p>
+
+            </div>
+
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+
+
+        </main>
+
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+            
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
+
+        </script>
+
+<script>
+    function dark() {
+        var menu = document.getElementById("darkMode");
+
+        menu.classList.toggle("active");
+        document.body.classList.toggle ("dark");
+    }
+</script>
+
+
+    </body>
+</html>

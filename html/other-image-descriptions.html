@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meghan Andrews - other projects</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="../css/photo.css">
+        <link rel="icon" type="image/png" href="../pics/icons/favicon.png">
+
+        <style>
+
+                img {
+                max-width: 100%;
+                border: none;
+                border-bottom: 3px solid;
+                margin: 0;
+            }
+
+
+            figure {
+                background-color: white;
+                border: 3px solid;
+                max-width: 60%;
+                min-width: 310px;
+                }
+
+
+            figcaption {
+                line-height: 1.3;
+                padding: 10px;
+                margin: 15px;
+            }
+
+            p {
+                margin-left: 30px;
+
+            }
+
+        </style>
+
+    </head>
+
+    
+    <body>
+
+        <header>
+
+            <nav>
+                <a class="home" href="../index.html">
+                    Home
+                </a>
+            </nav>
+
+                <h1 class="h1">other projects</h1>
+
+        </header>
+
+        <main>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button> 
+
+
+            <a class="show-hide-img-description-btn" href="other.html">Hide image descriptions</a>
+
+
+            <div class="project">
+
+                <figure>
+                    <img class="img-mobile" src="../pics/projects/wordsearch.jpg" alt="Giant printed word search.">
+
+                    <figcaption>
+                        5 foot by 5 foot printed word search hangs on a wall. A chair sits next to it, in order to show scale. There is a small, wire basket pinned onto the wall next to the word search. In the basket is a printed booklet that reads 'Word List'.
+                    </figcaption>
+                </figure>
+
+                <br>
+
+                <a href="../html/projects/word-search.html" style="margin-top: 15px;">Word Search</a> 
+
+                <p class="p-other">5 ft. by 5 ft. printed word search with printed half-letter sized word list. The word list is part of an episode of the TV show <i>Grey's Anatomy.</i></p>
+
+            </div>
+
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+
+
+        </main>
+
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+            } 
+
+        </script>
+
+    </body>
+</html>
