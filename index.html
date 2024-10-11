@@ -1,336 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Meghan Andrews - home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="pics/icons/favicon.png">
-    <style>
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 100px; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            /* background-image: url(../pics/photos/daisies.jpg); */
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0, 0, 0, 0.706); 
-        }
+<html>
+    <head>
+        <title>Meghan Andrews - home</title>
 
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html lang="en">
+            
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/png" href="pics/icons/favicon.png">
+        
+        <meta property="og:title" content="Meghan Andrews">
+        <meta property="og:description" content="designer / accessibility enthusiast">
+        <meta property="og:image" content="daisies.jpg">
+        <meta property="og:url" content="www.meghanandrews.me">
+        <meta property="og:type" content="website">
 
-        .modal img {
-            border: 1.5px solid black;
-            outline: 1.5px solid white;
-        }
+    </head>
+    
 
-        .modal-content, #caption {
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-
-        @keyframes zoom {
-            from {transform: scale(.5)}
-            to {transform: scale(1)}
-        }
-
-
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
-
-        @media only screen and (max-width: 700px){
-            .modal-content {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
 <body>
 
-    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+    <header>
 
-<header>
-    <div class="intro-container">
-        <img class="daisies-left" src="pics/photos/daisies-left.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
         <div class="intro">
-            <h1 style="padding-right: 22px;">Meghan Andrews</h1>
-            <h2>Graphic Designer</h2>
-            <!-- <h3>
-                <details>
-                    <summary>about me</summary>
-                    <span style="font-size:1.2rem; letter-spacing: 1px;">
-                        Recently received a BFA in Graphic Design from Virginia Commonwealth University. Passionate about accessibility and currently expanding my knowledge of UX / UI design through coursework at School of Visual Arts.
-                    </span>
-                </details>
-            </h3> -->
-            <h3 class="contact-me">
-                <img src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
-                <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+            
+            <h1>Meghan Andrews</h1>
+
+            <h2 style="font-size: 2rem;"> designer / accessibility enthusiast
+            </h2>
+
+            <h3 class="contact-links" style="margin-top: 8px;"> 
+
+                <img class="email" src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px; text-decoration: none;">
+
+                <a class="contact-links" href=mailto:“meghan.r.andrews@gmail.com”>contact me</a>
+               
+                
+             </h3>
+
+            <h3 class="contact-links"> 
+
+                <div class="social-container">
+
+                    <div class="are.na">
+                        <img class="logo" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+
+                        <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                            <img class="logo-mobile" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+                        </a>
+
+                        <a class="contact-links social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="font-size: smaller;"> are.na </a>
+                    </div>
+
+                    <div class="are.na">
+                        <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+
+                        <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                            <img class="logo-mobile" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                        </a>
+
+                        <a class="contact-links social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 7px; right: 4px;">pinterest</a>
+                    </div>
+
+                </div>
+
             </h3>
-            <div class="social-container">
-                <h4 style="position: relative; right: 10px;">
-                    <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
-                        <img class="logo-mobile" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;">
-                    </a>
-                    <img class="logo" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;">
-                    <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 2.5px;"> are.na </a>
-                </h4>
-                <h4>
-                    <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
-                        <img class="logo-mobile" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;">
-                    </a>
-                    <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;">
-                    <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 9px; right: 4px;">pinterest</a>
-                </h4>
-            </div>
+
         </div>
-        <img class="daisies-right" src="pics/photos/daisies-right.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
-    </div>
-</header>
 
-<main>
-    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+    </header>
 
-    <div class="button-container">
-        <a href="index.html">
-            <button class="active">Selected work</button>
-        </a>
-        <a href="html/categories/graphic-design.html">
-            <button>Graphic design</button>
-        </a>
-        <a href="html/categories/websites.html">
-            <button>Web design</button>
-        </a>
-    </div>
 
-    <div class="image-gallery">
-        <div class="row">
+    <main>
 
-            <figure class="column3">
-                <img src="projects/paws-for-treats/paws-for-treats-square.png" alt="Two light blue, circular stickers. Sticker reads 'Paws for Treats, homemade dog treats'. Text is written on top of a bone, which 2 smiling dogs peek over." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Logo design / Packaging concept - Paws for Treats</p>
+        <ul>
 
-                    <details>
-                        <summary>About</summary>
+            <li>
+                <a href="https://www.meghanandrewsportfolio.com/" target="_blank" rel="noreferrer noopener">professional portfolio</a> 
+            </li>
 
-                        <p>Paws for Treats is a newly-formed local business that sells homemade dog treats out of a food truck. I was approached by the owners of Paws for Treats to design a logo. In addition to designing a logo, I came up with a packaging concept for the business.</p>
+            <li>
+                <a href="html/photo.html">photos</a> <br>
+            </li>
 
-                        <p>Keeping in mind the client's budget and lifestyle, I suggested ordering plain, paper bags online. I then suggested that I design a sticker for them to put on each bag of dog treats. This allows them to purchase different packaging in the future when expanding to different products (such as cups for doggy ice cream).</p>
-                    </details>
-                </figcaption>
-            </figure>
+            <li>
+                <a href="html/websites.html">websites</a> <br>
+            </li>
 
-            <figure class="column3">
-                <img src="projects/eyes-open/eyes-open-sign.jpg" alt="Black and white sign that reads 'Who needs sleep when you've got Eyes Open Coffee Roasters, a local staple since 2007'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Signage - Eyes Open Coffee Roasters</a>
-                    </p>
 
-                    <details>
-                        <summary>About</summary>
-                        <p>Made in a continuing education course at School of Visual Arts.</p>
-                    </details>
-            </figure>
+            <li>
+                <a href="html/other.html">other projects</a>
+            </li>
 
-            <figure class="column3">
-                <img src="projects/eyes-open/eyes-open-landing-page.png" alt="2 phones display an email for Johnson's baby conditioner. Page background is baby blue with wavy white lines and email contains 2 photos of smiling babies in bathtubs." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p><a href="https://meghanrandrews.wixsite.com/eyes-open-coffee" target="_blank" rel="noreferrer noopener">Landing page</a> - Eyes Open Coffee Roasters</a>
-                    </p>
+        </ul>
 
-                    <details>
-                        <summary>About</summary>
-                        <p>Made in a continuing education course at School of Visual Arts.</p>
-                    </details>
-            </figure>
 
-            <figure class="column3">
-                <img src="projects/package-design/deco-honey.jpg" alt="A jar of honey with dark green and yellow art-deco inspired packaging. The label reads 'Deco Honey, since 2010. Straight from the hive, Richmond, VA'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Package design - Deco Honey</p>
+        <img class="daisies" src="pics/photos/daisies.jpg" alt="Grainy, black and white film photo. Close-up shot of a field of little daisies.">
 
-                    <details>
-                        <summary>About</summary>
-                        <p>Made in a continuing education course at School of Visual Arts.</p>
-                    </details>
-                </figcaption>
-            </figure>
+        <div class="homepage-disclaimer" style="font-size: 1.1rem;">
+            <p style="margin: 0; font-size: 1.1rem;">
+                * Website was hand-coded using HTML, CSS and Javascript 
+            </p>
 
-            <figure class="column3">
-                <img src="projects/WPNA/WPNA.jpg" alt="A book lays open, showing 2 pages of a style guide. One page reads 'logo color' and displays color logos, the other page reads 'logo black and white' and shows black and white versions of the color logos." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p style="padding-bottom: 10px;">Branding / Logo design - AIR 2023</p>
+            <p style="font-size: 1.1rem;">I am currently rebuilding this site into a new version.</p>
 
-                    <a href="https://drive.google.com/file/d/14p-m3mY8mr8b1WafAagrTBt6qhnmytdO/view" target="_blank" rel="noreferrer noopener">See style guide</a>
+            <a href="new-site-glimpse/index.html" target="_blank" rel="noreferrer noopener" style="font-size: 1.1rem;">Take a peek at new site</a>
 
-                    <details style="margin-top: 20px;">
-                        <summary>About</summary>
-
-                        <p>I participated in an accessible web design competition called <a href="https://knowbility.org/programs/air" target="_blank" rel="noreferrer noopener">"AIR"</a> (short for Accessibility Internet Rally), where I worked with a team of 5 developers to rebuild 10 pages of the website belonging to Windsor Park Neighborhood Association (a neighborhood association based in Austin, Texas).</p>
-                        
-                        <p>I helped guide the visual design of the website and provided both branding and logo design services as an additional perk that wasn't required for the competition.</p>
-
-                        <p> I redesigned the WPNA logo, staying true to the clients' desire to maintain certain elements of their original logo (namely the original tree illustration that they have used since the 80s) while incorporating elements from a new sign in the neighborhood. I offered several variations of the logo- as the client expressed the need for different logos that could be used in different contexts.</p>
-
-                        <p>I also created a style guide for Windsor Park, which includes accessibility tips that they can refer to when maintaining their website/brand.
-                        </p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/package-design/bread-factory.png" alt="2 loaves of bread in white and black minimal packaging. There is a print that resembles tile and the packaging reads 'Bread Factory'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Package design - Bread Factory</p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>Made in a continuing education course at School of Visual Arts.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/websites/one-thousand-words-square.png" alt="Laptop displaying the homepage of a website with forest green background. There is a collage of images scanned from magazines and books and a horizontal menu on bottom of screen. Title reads '1,000 words - a website about alt text / image description'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Handmade website - <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener"><i>1,000 words</i></a></p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>"1,000 words", a website about alt text and image description, was my senior thesis project for the BFA Graphic Design program at Virginia Commonwealth University.</p>
-
-                        <p>The website contains educational content, such as an “Introduction to alt text” section that defines both alt text and image description, and shows examples of what these might look like. In addition to this is an interactive section of the website where one can practice writing alt text and image descriptions on a few select images I chose.</p>
-
-                        <p>I also included an asynchronous workshop that one can participate in alone or with others, providing hands-on experience writing alt text and image descriptions while making mini zines with photos found in magazines.</p>
-
-                        <p>Website was hand-coded using HTML, CSS and Javascript.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/johnsons-spec-ad/Johnsons.png" alt="2 phones display an email for Johnson's baby conditioner. Page background is baby blue with wavy white lines and email contains 2 photos of smiling babies in bathtubs." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Email design - Johnson's baby conditioner</p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>Collaborated with copywriter Charlotte Boland to design a speculative email for Johnson's Baby Conditioner.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/websites/plants-square.png" alt="Computer with a pale pink website displayed on the screen. Title reads 'Plants seen in/near Richmond, Virginia'. Beneath title is a gallery of photos under the categories of 'identified' and 'unidentified'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Handmade website - <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener"><i>Plants</i></a></p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>This website was created as a final project for a web design class at Virginia Commonwealth University called "Handmade Web". In the website, I display photos of plants that I encountered during my daily life over the span of a few months.</p>
-
-                        <p>I tried to identify as many plants as I could, indicating which plants are native to the area they were found in or considered an invasive of particular concern by local conservation groups. I also added a feature where others can help me identify.</p>
-
-                        <p>Website was hand-coded using HTML, CSS and Javascript.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/package-design/texas-pete.jpg" alt="Bottle with rebranded Texas Pete Hot Sauce package design." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Package design - Texas Pete</p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>Made in a continuing education course at School of Visual Arts.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/websites/structure-square.png" alt="A laptop displays a website with large piano keys. There are Spotify embeds on each key as well as lyrics and sound descriptions." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Handmade website - <i><a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noopener noreferrer">Structure</a></i></p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>
-                        This website was made in a web-design class at Virginia Commonwealth University called "Handmade Web", where I learned HTML, CSS and a little bit of Javascript.</p>
-
-                        <p>Our assignment was to create a website that referenced a structure in some way. I chose to reference a piano/keyboard. I wanted the viewer to be able to "play the piano" by clicking the keys. But instead of "piano sounds" coming out of each key, a song would play instead.</p>
-                        
-                        <p>I wanted to make my website perceivable to viewers who are deaf or hard of hearing, which is why I included the lyrics and sound descriptions. I decided to approach the sound descriptions as if I were describing the songs to a friend.</p>
-                    </details>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img src="projects/word-search/wordsearch-square.jpg" alt="5 foot by 5 foot printed word search hangs on a wall. A chair sits next to it, in order to show scale. There is a small, wire basket pinned onto the wall next to the word search. In the basket is a printed booklet that reads 'Word List'." style="width: 100%" onclick="openModal(this)">
-                <figcaption>
-                    <p>Word Search</p>
-
-                    <details>
-                        <summary>About</summary>
-                        <p>5 ft. by 5 ft. printed word search with printed half-letter sized word list. The word list is the script from part of an episode of the TV show <i>Grey's Anatomy.</i></p>
-
-                        <p>Made for a class project at Virginia Commonwealth University.</p>
-                    </details>
-                </figcaption>
-            </figure>
         </div>
-    </div>
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-    </div>
 
-</main>
+        <!-- <div class="dark-button" id="darkMode" onclick="dark()">
+            <button>
+                <img src="pics/icons/dark-mode.png" alt="Dark-mode/light-mode icon." style="padding: 5px; width: 50px; height: 50px;">
+            </button>
+        </div> -->
 
-<script src="script.js"></script>
+        <!-- <div class="switch-container">
+            <label class="switch" id="darkMode">
+                <input onclick="dark()"type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            dark mode
+        </div> -->
 
-<script>
-    var modal = document.getElementById("myModal");
+    </main>
 
-    function openModal(image) {
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        modal.style.display = "block";
-        modalImg.src = image.src;
-        captionText.innerHTML = image.alt;
-    }
+    <script>
+        function dark() {
+            var menu = document.getElementById("darkMode");
 
-    var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+            menu.classList.toggle("active");
+            document.body.classList.toggle ("dark");
         }
-    }
-</script>
+    </script>
 
 </body>
 </html>
