@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Meghan Andrews - Web design</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="icon" type="image/png" href="../../pics/icons/favicon.png">
+
+        <style>
+            /* Modal Styles */
+
+            .modal {
+                display: none; 
+                position: fixed; 
+                z-index: 1; 
+                padding-top: 100px; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height: 100%; 
+                overflow: auto; 
+                background-color: rgb(0,0,0); 
+                background-color: rgba(0, 0, 0, 0.706); 
+            }
+    
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 95%;
+                max-width: 1200px;
+            }
+    
+            .modal img {
+                border: 1.5px solid black;
+                outline: 1.5px solid white;
+            }
+    
+            .modal-content, #caption {
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+    
+            @keyframes zoom {
+                from {transform: scale(.5)}
+                to {transform: scale(1)}
+            }
+    
+    
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+    
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+
+<header>
+    <div class="intro-container">
+
+        <img class="daisies-left" src="../../pics/photos/daisies-left.jpg" alt="Grainy, black and white film shot of a a field of little daisies.">
+
+        <div class="intro">
+
+            <h1 style="padding-right: 22px;">Meghan Andrews</h1>
+            <h2>Graphic Designer</h2>
+
+            <!-- <h3>
+                <details>
+                    <summary>about me</summary>
+                    <span style="font-size:1.2rem; letter-spacing: 1px;">
+                        Recently received a BFA in Graphic Design from Virginia Commonwealth University. Passionate about accessibility and currently expanding my knowledge of UX / UI design and programming languages.
+                    </span>
+                </details>
+            </h3> -->
+
+            <h3 class="contact-me">
+                <img src="../../pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
+
+                <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+            </h3>
+
+            <div class="social-container">
+                <h4>
+                    <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+                    </a>
+
+                    <img class="logo" src="../../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+
+                    <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 2.5px;"> are.na </a>
+                </h4>
+
+                <h4>
+                    <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                    </a>
+
+                    <img class="logo" src="../../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+
+                    <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 9px; right: 4px;">pinterest</a>
+                </h4>
+            </div>
+        </div>
+
+        <img class="daisies-right" src="../../pics/photos/daisies-right.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
+    </div>
+</header>
+
+<main>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+
+    <!-- <div class="switch-container">
+        <label class="switch" id="darkMode">
+            <input onclick="dark()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        dark mode
+    </div> -->
+
+    <div class="button-container">
+
+        <a href="../../index.html">
+            <button>Selected work</button>
+        </a>
+
+        <a href="graphic-design.html">
+            <button>Graphic design</button>
+        </a>
+
+        <a href="websites.html">
+            <button class="active">Web design</button>
+        </a>
+
+        <!-- <a href="photo.html">
+            <button>Photos</button>
+        </a> -->
+
+    </div>
+
+    <div class="image-gallery">
+        <div class="row">
+
+            <figure class="column2">
+                <img src="../../projects/websites/los-colores.png" alt="A laptop displays a website with a pale yellow background. Title reads 'Los colores'. Instructions read 'Learn / study the colors in Spanish. Hover your mouse over each square to see / hear the Spanish word for that color'. 5 colored squares rest below instructions." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption> 
+                    <a href="https://meghan-r-andrews.github.io/los-colores/" target="_blank" rel="noreferrer noopener">Los colores</a> 
+                    <p>A website where one can study the colors in Spanish</p>
+                    <span style="font-size: smaller; font-style: italic;">HTML, CSS, Javascript</span>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img src="../../projects/websites/one-thousand-words/01.png" alt="Laptop displaying the homepage of a website with forest green background. There is a collage of images scanned from magazines and books and a horizontal menu on bottom of screen. Title reads '1,000 words - a website about alt text / image description'." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener">1,000 words</a>
+
+                    <p>A website about alt text / image description</p>
+
+                    <span style="font-size: smaller; font-style: italic;">HTML, CSS, Javascript</span>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img src="../../projects/websites/plants/01.png" alt="Computer with a pale pink website displayed on the screen. Title reads 'Plants seen in/near Richmond, Virginia'. Beneath title is a gallery of photos under the categories of 'identified' and 'unidentified'." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">Plants</a>
+
+                    <p>A website about plant identification </p>
+           
+                    <span style="font-size: smaller; font-style: italic;">HTML, CSS, Javascript</span>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img src="../../projects/websites/structure/01.png" alt="A laptop displays a website with large piano keys. There are Spotify embeds on each key as well as lyrics and sound descriptions." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noreferrer noopener">Structure</a> 
+                    <p>A virtual keyboard / playlist / some of my favorite lip syncs from the show <i>Ru Paul's Drag Race.</i></p>
+            
+                    <span style="font-size: smaller; font-style: italic;">HTML, CSS, Javascript</span>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img src="../../projects/websites/AIR-25/AIR-25.png" alt="A website is displayed on a laptop. A large, purple banner with a hero image of a group of people working on computers sit next to a title that reads '25 Years of AIR'." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption>
+                    <span style="text-decoration: underline">25 years of AIR</span><i style="font-size: smaller;"> (web page no longer active)</i> <p>
+                    Made for <a href="https://knowbility.org/" target="_blank" rel="noreferrer noopener">Knowbility</a>, a non-profit that advocates for digital accessibility. The page commemorated the 25th anniversary of Knowbility's <i>AIR</i> (Accessibility Internet Rally), an annual accessible web design competition.</p>
+                    <span style="font-size: smaller; font-style: italic;">Kirby</span>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img src="../../projects/websites/eyes-open/01.png" alt="A landing page displayed on a laptop and mobile phone. Text reads 'Who needs sleep when you have Eyes Open Coffee Roasters'." style="width: 100%" onclick="openModal(this)">
+
+                <figcaption>
+                    <a href="https://meghanrandrews.wixsite.com/eyes-open-coffee" target="_blank" rel="noreferrer noopener">Landing page</a> - Eyes Open Coffee Roasters <p>
+                    Made in a continuing education course at School of Visual Arts. </p>
+                    <span style="font-size: smaller; font-style: italic;">Wix</span>
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+      
+
+</main>
+
+    <script src="../../script.js"></script>
+
+    <script>
+        var modal = document.getElementById("myModal");
+    
+        function openModal(image) {
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+            captionText.innerHTML = image.alt;
+        }
+    
+        var span = document.getElementsByClassName("close")[0];
+    
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
