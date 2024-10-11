@@ -10,6 +10,10 @@
     font-style: normal;
   }
 
+  a:visited {
+    color: blue;
+  }
+
 #backToTop {
     display: none; 
     position: fixed; 
@@ -55,7 +59,7 @@ body {
     background-color: #e6fdf6;
     font-family: 'nimbus sans', sans-serif;
     font-size: 1.5rem;
-    margin-bottom: 75px;
+    margin-bottom: 15px;
   }
 
   button {
@@ -105,6 +109,16 @@ button:active {
     width: 32%;
 }
 
+.dark footer a {
+  color: lightyellow;
+  border: 1px solid lightyellow;
+}
+
+footer a{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 footer a:hover {
   background-color: white;
   color: black;
@@ -145,6 +159,21 @@ footer a:hover {
     cursor: pointer;
     background-color: black;
     color: white;
+}
+
+  footer a{
+  position: relative;
+  left: 10px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px 15px 15px 15px;
+
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  align-items: center;
+  align-content: center;
+
 }
 
 .daisies-left, .daisies-right{

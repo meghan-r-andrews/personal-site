@@ -5,17 +5,51 @@
         <title>Meghan Andrews - site rebuild</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="main.css">
         <link rel="icon" type="image/png" href="pics/icons/favicon.png">
+        <style>
+            figcaption {
+                padding-bottom: 0;
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                overflow: auto;
+
+                width: 100%;
+                height: 100vh;
+
+                /* background-color: #e6fdf6; */
+                background-image: url(pics/photos/daisies.jpg);
+                background-size: cover;
+                background-position:center;
+                border: 1.3px solid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-content {
+                border: 1.75px solid black;
+                outline: 1.5px solid white;
+            }
+        </style>
     </head>
 
 <body>
 
 <header>
+
     <div class="intro-container">
         <img class="daisies-left" src="pics/photos/daisies-left.jpg" alt="Grainy, black and white film shot of a a field of little daisies.">
 
         <div class="intro">
+
             <h1 style="padding-right: 22px;">Meghan Andrews</h1>
             <h2>Graphic Designer</h2>
 
@@ -64,6 +98,7 @@
 </div>
 </header>
 
+
 <main>
 
     <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
@@ -79,7 +114,7 @@
     <div class="button-container">
 
         <a href="index.html">
-            <button class="active">Selected work</button>
+            <button>Selected work</button>
         </a>
 
         <a href="graphic-design.html">
@@ -87,7 +122,7 @@
         </a>
 
         <a href="web-design.html">
-            <button>Web design</button>
+            <button class="active">Web design</button>
         </a>
 
         <a href="">
@@ -98,102 +133,77 @@
     <div class="image-gallery">
         <div class="row">
 
-            <figure class="column3">
-                <img id="modalImgOne" src="projects/eyes-open/eyes-open-sign.jpg" alt="" style="width: 100%">
-
-                <figcaption> 
-                    <a href="">Signage - Eyes Open Coffee Roasters</a>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img id="modalImgTwo" src="projects/eyes-open/eyes-open-landing-page.png" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgOne" src="projects/websites/neocities/neocities.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Landing page - Eyes Open Coffee Roasters</a>
+                    <a href="https://meghan-r-andrews.neocities.org/" target="_blank" rel="noreferrer noopener">Neocities</a>
+                    <p>A website where I mess around and practice coding.</p>
+                    <p class="medium">HTML, CSS</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgThree" src="projects/package-design/deco-honey.jpg" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgTwo" src="projects/websites/los-colores.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Package design - Deco Honey</a>
+                    <a href="https://meghan-r-andrews.github.io/los-colores/" target="_blank" rel="noreferrer noopener">Los colores</a>
+                    <p>A website where one can study the colors in Spanish.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgFour" src="projects/WPNA/WPNA.jpg" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgThree" src="projects/websites/one-thousand-words/01.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Branding / Logo design - AIR 2023</a>
+                    <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener">1,000 words</a>
+                    <p>A website about alt text / image description.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgFive" src="projects/package-design/bread-factory.png" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgFour" src="projects/websites/plants/01.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Package design - Bread Factory</a>
+                    <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">Plants</a>
+                    <p>A website about plants / plant identification.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgSix" src="projects/websites/one-thousand-words-square.png" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgFive" src="projects/websites/structure/01.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Handmade website - <i>1,000 words</i></a>
+                    <a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noreferrer noopener">Structure</a>
+                    <p>Virtual keyboard / playlist / some of my favorite lip syncs from the show <i>Ru Paul's Drag Race</i>.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgSeven" src="projects/johnsons-spec-ad/Johnsons.png" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgSix" src="projects/websites/AIR-25/AIR-25.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Email design - Johnson's baby conditioner</a>
+                    <p><span style="text-decoration: underline;">25 years of AIR</span> - Knowbility <span style="font-size: smaller; font-style: italic;">(web page no longer active)</span></p>
+                    <p>
+                        A webpage commemorating the 25th anniversary of <a href="https://knowbility.org/programs/air" target="_blank" rel="noreferrer noopener">AIR</a>, an annual accessible web design competition thrown by <a href="https://knowbility.org/" target="_blank" rel="noreferrer noopener">Knowbility</a> (an Austin, TX based non-profit that advocates for digital accessibility).
+                    </p>
+                    <p class="medium">Kirby</p>
                 </figcaption>
             </figure>
 
-            <figure class="column3">
-                <img id="modalImgEight" src="projects/websites/plants-square.png" alt="" style="width: 100%">
+            <figure class="column2">
+                <img id="modalImgSeven" src="projects/websites/eyes-open/01.png" alt="" style="width: 100%">
 
                 <figcaption>
-                    <a href="">Handmade website - <i>Plants</i></a>
+                    <a href="https://meghanrandrews.wixsite.com/eyes-open-coffee" target="_blank" rel="noreferrer noopener">Landing page</a> - Eyes Open Coffee Roasters
+                    <p>Made in a continuing education course at School of Visual Arts.</p>
+                    <p class="medium">Wix</p>
                 </figcaption>
             </figure>
-
-            <figure class="column3">
-                <img id="modalImgNine" src="projects/package-design/texas-pete.jpg" alt="" style="width: 100%">
-
-                <figcaption>
-                    <a href="">Package design - Texas Pete hot sauce</a>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img id="modalImgTen" src="projects/websites/structure-square.png" alt="" style="width: 100%">
-
-                <figcaption>
-                    <a href="">Handmade website - <i>Structure</i></a>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img id="modalImgEleven" src="projects/book-covers/alice-in-wonderland.jpg" alt="" style="width: 100%">
-
-                <figcaption>
-                    <a href="">Book cover - Alice in Wonderland</a>
-                </figcaption>
-            </figure>
-
-            <figure class="column3">
-                <img id="modalImgTwelve" src="projects/word-search/wordsearch-square.jpg" alt="" style="width: 100%">
-
-                <figcaption>
-                    <a href="">Word search</a>
-                </figcaption>
-            </figure>
-
         </div>
     </div>
 
@@ -217,84 +227,49 @@
         var img = document.getElementById("modalImgOne");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgTwo");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgThree");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgFour");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgFive");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgSix");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
         var img = document.getElementById("modalImgSeven");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgEight");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgNine");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgTen");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgEleven");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgTwelve");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
         }
 
