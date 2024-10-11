@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> try </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <link rel="stylesheet" href="try.css">
+        
+        <link rel="icon" type="image/png" href="">
+
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="intro-container">
+        
+                <img class="daisies-left" src="pics/photos/daisies-left.jpg" alt="Grainy, black and white film shot of a a field of little daisies.">
+        
+                <div class="intro">
+        
+                    <h1 style="padding-right: 22px;">Meghan Andrews</h1>
+                    <h2>Graphic Designer</h2>
+        
+                    <h3>
+                        <details>
+                            <summary>about me</summary>
+                            <span style="font-size:1.2rem; letter-spacing: 1px;">
+                                Recently received a BFA in Graphic Design from Virginia Commonwealth University. Passionate about accessibility and currently expanding my knowledge of UX / UI design through coursework at School of Visual Arts.
+                            </span>
+                        </details>
+                    </h3>
+        
+                    <h4 class="contact-me">
+                        <img src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
+        
+                        <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+                    </h4>
+        
+                    <div class="social-container">
+                        <h4 style="position: relative; right: 10px;">
+                            <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                                <img class="logo-mobile" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+                            </a>
+        
+                            <img class="logo" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+        
+                            <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 2.5px;"> are.na </a>
+                        </h4>
+        
+                        <h4>
+                            <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                                <img class="logo-mobile" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                            </a>
+        
+                            <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+        
+                            <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="position: relative; bottom: 9px; right: 4px;">pinterest</a>
+                        </h4>
+                    </div>
+                </div>
+        
+                <img class="daisies-right" src="pics/photos/daisies-right.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
+            </div>
+        </header>
+
+        <main>
+
+            <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+        
+            <!-- <div class="switch-container">
+                <label class="switch" id="darkMode">
+                    <input onclick="dark()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                dark mode
+            </div> -->
+        
+            <div class="button-container">
+        
+                <a href="index.html">
+                    <button class="active">Selected work</button>
+                </a>
+        
+                <a href="html/categories/graphic-design.html">
+                    <button>Graphic design</button>
+                </a>
+        
+                <a href="html/categories/websites.html">
+                    <button>Web design</button>
+                </a>
+        
+                <!-- <a href="html/categories/photo.html">
+                    <button>Photos</button>
+                </a> -->
+            </div>
+        
+            <div class="image-gallery">
+                <div class="row">
+        
+                    <figure class="column3">
+                        <img src="projects/paws-for-treats/paws-for-treats-square.png" alt="" style="width: 100%">
+        
+                        <figcaption> 
+                            <a href="html/projects/selected/eyes-open.html">Logo design / Packaging concept - Paws for Treats</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/eyes-open/eyes-open-sign.jpg" alt="" style="width: 100%">
+        
+                        <figcaption> 
+                            <a href="html/projects/selected/eyes-open.html">Signage - Eyes Open Coffee Roasters</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/eyes-open/eyes-open-landing-page.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/eyes-open.html">Landing page - Eyes Open Coffee Roasters</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/package-design/deco-honey.jpg" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/deco-honey.html">Package design - Deco Honey</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img id="modalImgFour" src="projects/WPNA/WPNA.jpg" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/WPNA.html">Branding / Logo design - AIR 2023</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/package-design/bread-factory.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/bread-factory.html">Package design - Bread Factory</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/websites/one-thousand-words-square.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/one-thousand-words.html">Hand-coded web design - <i>1,000 words</i></a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/johnsons-spec-ad/Johnsons.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/johnsons-spec-ad.html">Email design - Johnson's baby conditioner</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/websites/plants-square.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/plants.html">Hand-coded web design - <i>Plants</i></a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/websites/structure-square.png" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/structure.html">Hand-coded web design - <i>Structure</i></a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/package-design/texas-pete.jpg" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/texas-pete.html">Package design - Texas Pete hot sauce</a>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="column3">
+                        <img src="projects/word-search/wordsearch-square.jpg" alt="" style="width: 100%">
+        
+                        <figcaption>
+                            <a href="html/projects/selected/word-search.html">Word search</a>
+                        </figcaption>
+                    </figure>
+        
+                </div>
+            </div>
+        
+        
+        </main>
+        
+            <script src="script.js"></script>
+        
+        </body>
+        </html>
