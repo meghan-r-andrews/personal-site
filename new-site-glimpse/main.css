@@ -55,6 +55,7 @@ body {
     background-color: #e6fdf6;
     font-family: 'nimbus sans', sans-serif;
     font-size: 1.5rem;
+    margin-bottom: 75px;
   }
 
   button {
@@ -63,6 +64,7 @@ body {
     background-color: lightgrey;
     border-radius: 3px;
     border: 1.3px solid;
+    font-size: 1.2rem;
   }
   
 button:hover {
@@ -84,6 +86,7 @@ button:active {
     justify-content: center;
     gap: 8px;
     margin: 20px;
+    margin-top: 30px;
   }
 
 .button-container button.active {
@@ -100,6 +103,22 @@ button:active {
 
 .column3 {
     width: 32%;
+}
+
+footer a:hover {
+  background-color: white;
+  color: black;
+
+  font-family: serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+
+  border: 2px solid;
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 darkgrey;
+
+  cursor: pointer;
 }
 
 .close {
@@ -119,7 +138,7 @@ button:active {
 
     /* height: 70px; */
 
-    padding: 0 17px 10px 17px;
+    padding: 0 17px;
 }
 
 .close:hover, .close:focus {
@@ -129,7 +148,7 @@ button:active {
 }
 
 .daisies-left, .daisies-right{
-    max-height: 368px;
+    max-height: 346px;
     width: auto;
   }
 
@@ -176,6 +195,17 @@ button:active {
     padding-bottom: 5px;
   }
 
+  .intro details {
+    position: relative;
+    left: 3px;
+    width: fit-content;
+  }
+
+  .intro summary {
+    padding-right: 25px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 
 figcaption {
     padding: 10px;
@@ -301,6 +331,8 @@ figure:hover {
     color: white;
     position: relative;
     bottom: 2;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .intro a:hover {
@@ -308,6 +340,7 @@ figure:hover {
     color: black;
 
     font-family: serif;
+    font-style: italic;
     padding: 10px;
 
     border: 2px solid;
@@ -362,8 +395,8 @@ figure:hover {
     z-index: 1;
     overflow: auto;
 
-    width: 85%;
-    /* width: 100%; */
+    /* width: 85%; */
+    width: 100%;
     height: auto;
     max-height: 100vh;
 
@@ -467,6 +500,20 @@ figure:hover {
     border: 1.5px solid;
   }
 
+  .social-container a:hover {
+    background-color: white;
+    color: black;
+
+    font-family: serif;
+    padding: 10px;
+
+    border: 2px solid;
+    border-radius: 2px;
+    box-shadow: 4px 4px 0 darkgrey;
+
+    cursor: pointer;
+  }
+
   .social-container {
     background-color: black;
     outline: 1.3px solid black;
@@ -474,7 +521,6 @@ figure:hover {
     margin: 5px;
 
     display: flex;
-    gap: 40px;
 
     align-items: center;
   }
@@ -497,6 +543,7 @@ figure:hover {
     color: black;
 
     font-family: serif;
+    font-style: italic;
     padding: 10px;
     margin-bottom: 5px;
 

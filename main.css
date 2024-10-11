@@ -205,6 +205,11 @@ padding: 2px 2px 0 2px;
     border: 2px solid black;
   }
 
+  .intro a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
   li {
     padding: 10px;
     text-align: left;
