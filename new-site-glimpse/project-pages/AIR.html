@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Meghan Andrews - AIR 2023</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" type="image/png" href="../pics/icons/favicon.png">
+    </head>
+
+<body>
+
+<header>
+
+    <div class="intro-container">
+        <img class="daisies-left" src="../pics/photos/daisies-left.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
+
+        <div class="intro">
+
+            <h1 style="padding-right: 22px;">Meghan Andrews</h1>
+            <h2>Graphic Designer</h2>
+
+            <h3>
+                <img src="../pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
+
+                <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+            </h3>
+
+            <div class="social-container">
+                <h4>
+                    <div style="position: relative; right: 4px;">
+                    <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px; right: 3px;"> 
+                    </a>
+
+                    <img class="logo" src="../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+
+                    <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 2.5px;"> are.na </a>
+                </h4>
+
+                <h4>
+                    <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                    </a>
+
+                    <img class="logo" src="../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+
+                    <a class="social-mobile pinterest-positioning" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 11px; ">pinterest</a>
+                </h4>
+ 
+            </div>
+        </div>
+
+        <img class="daisies-right" src="../pics/photos/daisies-right.jpg" alt="Grainy, black and white film shot of a field of little daisies.">
+    </div>
+</div>
+</header>
+
+
+<main>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+
+    <!-- <div class="switch-container logo">
+        <label class="switch" id="darkMode">
+            <input onclick="dark()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        dark mode
+    </div> -->
+
+    <div class="button-container">
+
+        <a href="../index.html">
+            <button>Selected work</button>
+        </a>
+
+        <a href="../graphic-design.html">
+            <button>Graphic design</button>
+        </a>
+
+        <a href="../web-design.html">
+            <button>Web design</button>
+        </a>
+
+        <!-- <a href="../photos.html">
+            <button>Photos</button>
+        </a> -->
+
+        <a href="AIR.html">
+            <button class="active">Branding / Logo design - AIR 2023</button>
+        </a>
+    </div>
+
+    <div class="image-gallery">
+        <div class="row">
+
+            <figure class="column2">
+                <img id="modalImgOne" src="../projects/WPNA/WPNA-rectangle.jpg" alt="" style="width: 100%">
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgTwo" src="../projects/WPNA/WPNA-sign.jpg" alt="" style="width: 100%">
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgThree" src="../projects/WPNA/WPNA-previous-logos.png" alt="" style="width: 100%">
+            </figure>
+        </div>
+    </div>
+
+    <div class="modal" id="modalOne">
+        <button class="close">&times;</button>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <div class="project-description">
+        <a href="https://drive.google.com/file/d/14p-m3mY8mr8b1WafAagrTBt6qhnmytdO/view" target="_blank" rel="noreferrer noopener">See style guide</a>
+
+        <p>
+            I participated in an accessible web design competition called "AIR" (short for Accessibility Internet Rally), where I worked with a team of 5 developers to rebuild 10 pages of the website belonging to a neighborhood association in Austin, Texas called Windsor Park. I helped guide the visual design of the website and provided both branding and logo design services as an additional perk that wasn't required for the competition. 
+        </p>
+
+        <p>
+            I redesigned the WPNA logo, staying true to the clients' desire to maintain certain elements of their original logo (namely the original tree illustration that they have used since the 80s) while incorporating elements from a new sign in the neighborhood. I offered several variations of the logo- as the client expressed the need for different logos that could be used in different contexts.   
+        </p>
+
+        <p>
+            I also created a style guide for Windsor Park, which includes accessibility tips that they can refer to when maintaining their website / brand. 
+        </p>
+    </div>
+
+</main>
+
+<!-- <footer>
+    <a class="contact-footer" href=mailto:“meghan.r.andrews@gmail.com”>contact me</a>
+</footer> -->
+
+    <script src="../script.js"></script>
+
+    <script>
+        var modal = document.getElementById("modalOne");
+
+        var img = document.getElementById("modalImgOne");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgTwo");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgThree");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        } 
+    </script>
+
+</body>
+</html>

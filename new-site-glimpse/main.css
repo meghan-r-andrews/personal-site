@@ -52,10 +52,6 @@
   }
 
 body {
-    background-color: darkslategrey;
-}
-
-body {
     background-color: #e6fdf6;
     font-family: 'nimbus sans', sans-serif;
     font-size: 1.5rem;
@@ -149,10 +145,9 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    padding: 0 17px 10px 17px;
 
-    /* height: 70px; */
-
-    padding: 0 17px;
 }
 
 .close:hover, .close:focus {
@@ -177,7 +172,7 @@ footer a:hover {
 }
 
 .daisies-left, .daisies-right{
-    max-height: 346px;
+    max-height: 287px;
     width: auto;
   }
 
@@ -224,6 +219,21 @@ footer a:hover {
     padding-bottom: 5px;
   }
 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active, .dot:hover {
+    background-color: black;
+  }
+
   .intro details {
     position: relative;
     left: 3px;
@@ -234,6 +244,10 @@ footer a:hover {
     padding-right: 25px;
     text-decoration: underline;
     text-underline-offset: 4px;
+  }
+
+  .intro h3 {
+    padding-bottom: 13px;
   }
 
 figcaption {
@@ -297,11 +311,13 @@ figure:hover {
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
   h2 {
     font-size: 2.2rem;
+    /* background-color: white;
+    color: black; */
   }
 
   h3 {
@@ -310,6 +326,12 @@ figure:hover {
 
   h4 {
     font-size: 1.5rem;
+  }
+
+  .home {
+    position: fixed;
+    top: 15px;
+    left: 15px;
   }
 
   .image-descriptions {
@@ -424,7 +446,6 @@ figure:hover {
     z-index: 1;
     overflow: auto;
 
-    /* width: 85%; */
     width: 100%;
     height: auto;
     max-height: 100vh;
@@ -466,6 +487,82 @@ figure:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.pinterest-positioning {
+  font-size: smaller; 
+  position: relative; 
+  bottom: 11px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  border: 1.3px solid;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+.project-description {
+  max-width: 1000px;
+  padding-bottom: 40px;
+
+}
+
+.project-description a:hover {
+  background-color: white;
+  color: black;
+
+  font-family: serif;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+
+  border: 2px solid;
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 darkgrey;
+
+  cursor: pointer;
+}
+
+.project-description p {
+padding: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: black;
+  color: white;
+}
+
+p a:hover {
+  background-color: white;
+  color: black;
+
+  font-family: serif;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+
+  border: 2px solid;
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 darkgrey;
+
+  cursor: pointer;
 }
 
 
@@ -529,6 +626,17 @@ figure:hover {
     border: 1.5px solid;
   }
 
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slideshow-container img {
+    margin-top: 20px;
+    border: 1.5px solid;
+  }
+
   .social-container a:hover {
     background-color: white;
     color: black;
@@ -548,9 +656,9 @@ figure:hover {
     outline: 1.3px solid black;
     outline-offset: 1.5px;
     margin: 5px;
+    border-radius: 3px;
 
     display: flex;
-
     align-items: center;
   }
 
@@ -572,6 +680,7 @@ figure:hover {
     color: black;
 
     font-family: serif;
+    font-weight: bold;
     font-style: italic;
     padding: 10px;
     margin-bottom: 5px;
@@ -691,6 +800,8 @@ figure:hover {
         display: none;
       }
 }
+
+
 
 
 

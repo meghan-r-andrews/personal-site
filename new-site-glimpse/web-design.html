@@ -2,44 +2,45 @@
 <html lang="en">
 
     <head>
-        <title>Meghan Andrews - site rebuild</title>
+        <title>Meghan Andrews - web design</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="main.css">
         <link rel="icon" type="image/png" href="pics/icons/favicon.png">
-        <style>
-            figcaption {
-                padding-bottom: 0;
-            }
-
-            .modal {
-                display: none;
-                position: fixed;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 1;
-                overflow: auto;
-
-                width: 100%;
-                height: 100vh;
-
-                /* background-color: #e6fdf6; */
-                background-image: url(pics/photos/daisies.jpg);
-                background-size: cover;
-                background-position:center;
-                border: 1.3px solid;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .modal-content {
-                border: 1.75px solid black;
-                outline: 1.5px solid white;
-            }
-        </style>
     </head>
+
+    <style>
+        figcaption {
+            padding-bottom: 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            overflow: auto;
+
+            width: 100%;
+            height: 100vh;
+
+            /* background-color: #e6fdf6; */
+            background-image: url(pics/photos/daisies.jpg);
+            background-size: cover;
+            background-position:center;
+            border: 1.3px solid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            border: 1.75px solid black;
+            outline: 1.5px solid white;
+        }
+    </style>
 
 <body>
 
@@ -54,19 +55,10 @@
             <h2>Graphic Designer</h2>
 
             <h3>
-                <details>
-                    <summary>about me</summary>
-                    <p style="font-size:1.2rem; letter-spacing: 1px; line-height: 1.5">
-                        Recently received a BFA in Graphic Design from Virginia Commonwealth University. Passionate about accessibility and currently expanding my knowledge of UX / UI design through coursework at School of Visual Arts.
-                    </p>
-                </details>
-            </h3>
-
-            <h4>
                 <img src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
 
                 <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
-            </h4>
+            </h3>
 
             <div class="social-container">
                 <h4>
@@ -87,7 +79,7 @@
 
                     <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
 
-                    <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 9px; ">pinterest</a>
+                    <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 11px; ">pinterest</a>
                 </h4>
  
             </div>
@@ -103,13 +95,13 @@
 
     <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
 
-    <div class="switch-container logo">
+    <!-- <div class="switch-container logo">
         <label class="switch" id="darkMode">
             <input onclick="dark()" type="checkbox">
             <span class="slider round"></span>
         </label>
         dark mode
-    </div>
+    </div> -->
 
     <div class="button-container">
 
@@ -134,17 +126,7 @@
         <div class="row">
 
             <figure class="column2">
-                <img id="modalImgOne" src="projects/websites/neocities/neocities.png" alt="" style="width: 100%">
-
-                <figcaption>
-                    <a href="https://meghan-r-andrews.neocities.org/" target="_blank" rel="noreferrer noopener">Neocities</a>
-                    <p>A website where I mess around and practice coding.</p>
-                    <p class="medium">HTML, CSS</p>
-                </figcaption>
-            </figure>
-
-            <figure class="column2">
-                <img id="modalImgTwo" src="projects/websites/los-colores.png" alt="" style="width: 100%">
+                <img id="modalImgOne" src="projects/websites/los-colores.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <a href="https://meghan-r-andrews.github.io/los-colores/" target="_blank" rel="noreferrer noopener">Los colores</a>
@@ -154,7 +136,7 @@
             </figure>
 
             <figure class="column2">
-                <img id="modalImgThree" src="projects/websites/one-thousand-words/01.png" alt="" style="width: 100%">
+                <img id="modalImgTwo" src="projects/websites/one-thousand-words/01.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener">1,000 words</a>
@@ -164,7 +146,7 @@
             </figure>
 
             <figure class="column2">
-                <img id="modalImgFour" src="projects/websites/plants/01.png" alt="" style="width: 100%">
+                <img id="modalImgThree" src="projects/websites/plants/01.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">Plants</a>
@@ -174,7 +156,7 @@
             </figure>
 
             <figure class="column2">
-                <img id="modalImgFive" src="projects/websites/structure/01.png" alt="" style="width: 100%">
+                <img id="modalImgFour" src="projects/websites/structure/01.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noreferrer noopener">Structure</a>
@@ -184,7 +166,7 @@
             </figure>
 
             <figure class="column2">
-                <img id="modalImgSix" src="projects/websites/AIR-25/AIR-25.png" alt="" style="width: 100%">
+                <img id="modalImgFive" src="projects/websites/AIR-25/AIR-25.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <p><span style="text-decoration: underline;">25 years of AIR</span> - Knowbility <span style="font-size: smaller; font-style: italic;">(web page no longer active)</span></p>
@@ -196,7 +178,7 @@
             </figure>
 
             <figure class="column2">
-                <img id="modalImgSeven" src="projects/websites/eyes-open/01.png" alt="" style="width: 100%">
+                <img id="modalImgSix" src="projects/websites/eyes-open/01.png" alt="" style="width: 100%">
 
                 <figcaption>
                     <a href="https://meghanrandrews.wixsite.com/eyes-open-coffee" target="_blank" rel="noreferrer noopener">Landing page</a> - Eyes Open Coffee Roasters
@@ -260,13 +242,6 @@
         }
 
         var img = document.getElementById("modalImgSix");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-        modal.style.display = "flex";
-        modalImg.src = this.src;
-        }
-
-        var img = document.getElementById("modalImgSeven");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
         modal.style.display = "flex";
