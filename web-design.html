@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meghan Andrews - web design</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/png" href="pics/icons/favicon.png">
+
+        <style>
+            figcaption {
+                padding-bottom: 0;
+            }
+    
+            .modal {
+                display: none;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                overflow: auto;
+    
+                width: 100%;
+                height: 100vh;
+    
+                /* background-color: #e6fdf6; */
+                background-image: url(pics/photos/daisies.jpg);
+                background-size: cover;
+                background-position:center;
+                border: 1.3px solid;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .modal-content {
+                border: 1.75px solid black;
+                outline: 1.5px solid white;
+            }
+        </style>
+    </head>
+
+<body>
+  <header>
+    <div class="intro-container">
+        <img class="daisies-left" src="pics/photos/daisies-left.jpg" alt="">
+
+        <div class="intro">
+            <h1 style="padding-right: 22px;">Meghan Andrews</h1>
+            <h2>Graphic Designer</h2>
+
+            <h3>
+                <img src="pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
+
+                <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+            </h3>
+
+            <div class="social-container">
+                <h4>
+                    <div style="position: relative; right: 4px;">
+                    <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px; right: 3px;"> 
+                    </a>
+
+                    <img class="logo" src="pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+
+                    <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 2.5px;"> are.na </a>
+                </h4>
+
+                <h4>
+                    <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                    </a>
+
+                    <img class="logo" src="pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+
+                    <a class="social-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 11px; ">pinterest</a>
+                </h4>
+            </div>
+        </div>
+
+        <img class="daisies-right" src="pics/photos/daisies-right.jpg" alt="">
+    </div>
+  </div>
+</header>
+
+<main>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+
+    <!-- <div class="switch-container logo">
+        <label class="switch" id="darkMode">
+            <input onclick="dark()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        dark mode
+    </div> -->
+
+    <div class="button-container">
+        <a href="index.html">
+            <button>Selected work</button>
+        </a>
+
+        <a href="graphic-design.html">
+            <button>Graphic design</button>
+        </a>
+
+        <a href="web-design.html">
+            <button class="active">Web design</button>
+        </a>
+
+        <!-- <a href="">
+            <button>Photos</button>
+        </a> -->
+    </div>
+
+    <div class="image-gallery">
+        <div class="row">
+
+            <figure class="column2">
+                <img id="modalImgOne" src="projects/websites/los-colores.png" alt="Screenshot of a website. Background color is a soft-yellow. Title reads 'Los colores'. Instructions read 'Learn / study the colors in spanish. Hover your mouse over each square to see / hear the spanish word for that color'. 5 colored squares rest below instructions." style="width: 100%">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/los-colores/" target="_blank" rel="noreferrer noopener">Los colores</a>
+                    <p>A website where one can study the colors in Spanish.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgTwo" src="projects/websites/one-thousand-words/01.png" alt="Screenshot of a website. A collage of photos found in magazines are displayed along with the title that reads '1,000 words, a website about alt text / image description'. A menu sits at the bottom of the page." style="width: 100%">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/one-thousand-words/" target="_blank" rel="noreferrer noopener">1,000 words</a>
+                    <p>A website about alt text / image description.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgThree" src="projects/websites/plants/01.png" alt="Screenshot. Homepage of Plants website. Page background is pale pink and title reads 'This is a website about plants'. Above this is a row of images of small scans of autumn leaves." style="width: 100%">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">Plants</a>
+                    <p>A website about plants / plant identification.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgFour" src="projects/websites/structure/01.png" alt="Screenshot of a website with large piano keys sprawled across the screen. Spotify embeds sit at the bottom of each piano key and song lyrics as well as sound descriptions sit below the keys." style="width: 100%">
+
+                <figcaption>
+                    <a href="https://meghan-r-andrews.github.io/homepage/structure/index.html" target="_blank" rel="noreferrer noopener">Structure</a>
+                    <p>Virtual keyboard / playlist / some of my favorite lip syncs from the show <i>Ru Paul's Drag Race</i>.</p>
+                    <p class="medium">HTML, CSS, Javascript</p>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgFive" src="projects/websites/AIR-25/AIR-25.png" alt="Screenshot of a website. A large, purple banner with a hero image of a group of people working on computers sit next to a title that reads '25 Years of AIR'." style="width: 100%">
+
+                <figcaption>
+                    <p><span style="text-decoration: underline;">25 years of AIR</span> - Knowbility <span style="font-size: smaller; font-style: italic;">(web page no longer active)</span></p>
+                    <p>
+                        A webpage commemorating the 25th anniversary of <a href="https://knowbility.org/programs/air" target="_blank" rel="noreferrer noopener">AIR</a>, an annual accessible web design competition thrown by <a href="https://knowbility.org/" target="_blank" rel="noreferrer noopener">Knowbility</a> (an Austin, TX based non-profit that advocates for digital accessibility).
+                    </p>
+                    <p class="medium">Kirby</p>
+                </figcaption>
+            </figure>
+
+            <figure class="column2">
+                <img id="modalImgSix" src="projects/websites/eyes-open/01.png" alt="Screenshot of a landing page. Slogan reads 'Who needs sleep when you have Eyes Open Coffee Roasters'. In the background behind the company logo is a video of a person pouring a latte." style="width: 100%">
+
+                <figcaption>
+                    <a href="https://meghanrandrews.wixsite.com/eyes-open-coffee" target="_blank" rel="noreferrer noopener">Landing page</a> - Eyes Open Coffee Roasters
+                    <p>Made in a continuing education course at School of Visual Arts.</p>
+                    <p class="medium">Wix</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="modal" id="modalOne">
+        <button class="close">&times;</button>
+        <img class="modal-content" id="img01">
+    </div>
+</main>
+
+    <script src="script.js"></script>
+
+    <script>
+        var modal = document.getElementById("modalOne");
+
+        var img = document.getElementById("modalImgOne");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgTwo");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgThree");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgFour");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgFive");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgSix");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        } 
+    </script>
+
+</body>
+</html>

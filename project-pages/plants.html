@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Handmade website - Plants</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" type="image/png" href="../pics/icons/favicon.png">
+    </head>
+
+<body>
+  <header>
+    <div class="intro-container">
+        <img class="daisies-left" src="../pics/photos/daisies-left.jpg" alt="">
+
+        <div class="intro">
+            <h1 style="padding-right: 22px;">Meghan Andrews</h1>
+            <h2>Graphic Designer</h2>
+
+            <h3>
+                <img src="../pics/icons/email.png" alt="Email icon." style="width: 37px; position: relative; top: 4px;">
+
+                <a href=mailto:“meghan.r.andrews@gmail.com” style="position: relative; bottom: 2px;">contact me</a>
+            </h3>
+
+            <div class="social-container">
+                <h4>
+                    <div style="position: relative; right: 4px;">
+                    <a class="logo-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px; right: 3px;"> 
+                    </a>
+
+                    <img class="logo" src="../pics/icons/are.na-logo-white.png" alt="Are.na icon." style="width: 40px; position: relative; top: 3px;"> 
+
+                    <a class="social-mobile" href="https://www.are.na/meghan-andrews/channels" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 2.5px;"> are.na </a>
+                </h4>
+
+                <h4>
+                    <a class="logo-mobile" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener">
+                        <img class="logo-mobile" src="../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+                    </a>
+
+                    <img class="logo" src="../pics/icons/pinterest.png" alt="Pinterest icon." style="width: 40px; position: relative; top: 5px;"> 
+
+                    <a class="social-mobile pinterest-positioning" href="https://www.pinterest.com/meghan0r0andrews/" target="_blank" rel="noreferrer noopener" style="font-size: smaller; position: relative; bottom: 11px; ">pinterest</a>
+                </h4>
+ 
+            </div>
+        </div>
+
+        <img class="daisies-right" src="../pics/photos/daisies-right.jpg" alt="">
+    </div>
+  </div>
+</header>
+
+<main>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+
+    <!-- <div class="switch-container logo">
+        <label class="switch" id="darkMode">
+            <input onclick="dark()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        dark mode
+    </div> -->
+
+    <div class="button-container">
+        <a href="plants.html">
+            <button class="active">Handmade website - Plants</button>
+        </a>
+
+        <button onclick="window.history.back();">&#8592; Back</button> 
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../projects/websites/plants/01.png" style="width:100%" alt="Screenshot. Homepage of Plants website. Page background is pale pink and title reads 'This is a website about plants'. Above this is a row of images of small scans of autumn leaves.">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="../projects/websites/plants/02.png" style="width:100%" alt="Screenshot. Homepage of Plants website. Menu bar at top of screen contains a button that reads 'toggle dark mode' and a dropdown menu that reads 'Select font type'. Page background is now dark green and font is now open-dyslexic (instead of sans-serif). ">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="../projects/websites/plants/03.png" style="width:100%" alt="Screenshot of Plants website. Title reads 'Plants seen in/near Richmond, Virginia'. Below title is a gallery of images of plants. Viewer can select between two categories, 'Identified' and 'Unidentified'.">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="../projects/websites/plants/04.png" style="width:100%" alt="Screenshot of Plants website. Screen contains a full-screen photo slideshow, with a photo of an American Mountain Ash tree.">
+          </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div> 
+
+    <div class="project-description">
+        <a href="https://meghan-r-andrews.github.io/homepage/final/html/index.html" target="_blank" rel="noreferrer noopener">See website</a>
+
+        <p>This website was created as a final project for a web design class at Virginia Commonwealth University called "Handmade Web". In the website, I documented photos of plants that I encountered during my daily life over the span of a few months.</p>
+
+        <p> I tried to identify which plants are native to the area they were found in or considered invasive of particular concern by local conservation groups. I also added a feature where others can help me identify.</p>
+
+        <p>Website was coded using HTML, CSS and Javascript.</p>
+    </div>
+</main>
+
+    <script src="../script.js"></script>
+
+    <script>
+        var modal = document.getElementById("modalOne");
+
+        var img = document.getElementById("modalImgOne");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgTwo");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgThree");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgFour");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        } 
+    </script>
+
+</body>
+</html>
