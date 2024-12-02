@@ -165,6 +165,22 @@
                     <a href="project-pages/word-search.html">Word search</a>
                 </figcaption>
             </figure>
+
+            <!-- <figure class="column3">
+                <img id="modalImgEleven" src="projects/RVA-community-fridges/rvacf.png" alt="" style="width: 100%">
+
+                <figcaption>
+                    <a href="project-pages/rva-community-fridges.html">Flyer - RVA Community Fridges</a>
+                </figcaption>
+            </figure> -->
+
+            <figure class="column3">
+                <img id="modalImgEleven" src="projects/design-practices-book.png" alt="Open book, displaying a passage of writing in a blue and white color scheme. The left page is a mirrored yet distorted image of right page." style="width: 100%">
+
+                <figcaption>
+                    <a href="project-pages/design-practices-book.html">Book spread - VCU GDES</a>
+                </figcaption>
+            </figure>
         </div>
     </div>
 
@@ -243,6 +259,13 @@
         }
 
         var img = document.getElementById("modalImgTen");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+
+        var img = document.getElementById("modalImgEleven");
         var modalImg = document.getElementById("img01");
         img.onclick = function(){
         modal.style.display = "block";

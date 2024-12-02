@@ -230,7 +230,7 @@ figure:hover {
     color: black;
 
     font-family: serif;
-    padding: 7px;
+    padding: 10px;
     font-weight: 600;
     font-style: italic;
 
@@ -494,6 +494,15 @@ figure:hover {
   display: inline-block;
 }
 
+.project-description:hover {
+  color: white;
+  background-color: black;
+}
+
+.project-description:hover a{
+  color: rgb(151, 188, 252);
+}
+
 .project-description a:hover {
   background-color: white;
   color: black;
@@ -508,15 +517,6 @@ figure:hover {
   box-shadow: 4px 4px 0 darkgrey;
 
   cursor: pointer;
-}
-
-.project-description:hover {
-  color: white;
-  background-color: black;
-}
-
-.project-description:hover a{
-  color: rgb(151, 188, 252);
 }
 
 .project-description p {
@@ -610,7 +610,7 @@ p a:hover {
   }
   
   .slideshow-container img {
-    margin-top: 20px;
+    margin-top: 15px;
     border: 1.5px solid;
   }
 
