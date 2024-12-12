@@ -112,6 +112,10 @@ button:hover {
     width: 32%;
 }
 
+.column4 {
+  width: 24%;
+}
+
 .close {
     position: absolute;
     top: 15px;
@@ -562,6 +566,12 @@ p a:hover {
     margin: 5px;
   }
 
+  .row,
+  .row > .column4 {
+    padding: 8px;
+    margin: 5px;
+  }
+
 .row:after {
     content: "";
     display: table;
@@ -709,6 +719,10 @@ p a:hover {
         width: 95%;
       }
 
+      .column4 {
+        width: 48%;
+      }
+
 }
 
 @media (max-width: 850px) {
@@ -733,6 +747,10 @@ p a:hover {
 
     .modal {
       display: none !important;
+    }
+
+    .column4 {
+      width: 98%;
     }
 }
 
