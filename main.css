@@ -141,6 +141,10 @@ button:hover {
     color: white;
 }
 
+.cursor-zoom-in:hover{
+cursor: zoom-in;
+}
+
 .daisies-left, .daisies-right{
     max-height: 287px;
     width: auto;
@@ -206,7 +210,7 @@ button:hover {
 
 figcaption {
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -214,6 +218,10 @@ figure {
     background-color: white;
     border: 1.3px solid black;
 }
+
+/* figure a {
+  font-size: 1.5rem;
+} */
 
 figure.column3 {
   padding: 0;
@@ -230,7 +238,7 @@ figure:hover {
   }
 
   figure a:hover {
-    background-color: white;
+    /* background-color: white;
     color: black;
 
     font-family: serif;
@@ -240,7 +248,7 @@ figure:hover {
 
     border: 2px solid;
     border-radius: 2px;
-    box-shadow: 4px 4px 0 darkgrey;
+    box-shadow: 4px 4px 0 darkgrey; */
   }
 
   figure:hover figcaption {
@@ -393,7 +401,21 @@ figure:hover {
 
 .image-gallery img {
     border: 1.3px solid black;
-    cursor: zoom-in;
+    cursor: pointer;
+}
+
+.link-within-a-link:hover {
+      background-color: white;
+    color: black;
+
+    font-family: serif;
+    padding: 10px;
+    font-weight: 600;
+    font-style: italic;
+
+    border: 2px solid;
+    border-radius: 2px;
+    box-shadow: 4px 4px 0 darkgrey;
 }
 
 .logo-mobile {
@@ -545,6 +567,20 @@ p a:hover {
   box-shadow: 4px 4px 0 darkgrey;
 
   cursor: pointer;
+}
+
+.remove-underline {
+  text-decoration: none;
+  color: black;
+}
+
+.remove-underline:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+figure:hover .underline {
+  text-decoration: underline;
 }
 
 .row {
