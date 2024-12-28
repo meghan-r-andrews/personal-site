@@ -217,6 +217,7 @@ figcaption {
 figure {
     background-color: white;
     border: 1.3px solid black;
+    /* z-index: 10; */
 }
 
 /* figure a {
@@ -231,24 +232,15 @@ figure:hover {
     background-color: black;
 
     border: 1.3px solid white;
+    transform: scale(1.1);
   }
 
   figure:hover a {
     color: rgb(151, 188, 252);
   }
 
-  figure a:hover {
-    /* background-color: white;
-    color: black;
-
-    font-family: serif;
-    padding: 10px;
-    font-weight: 600;
-    font-style: italic;
-
-    border: 2px solid;
-    border-radius: 2px;
-    box-shadow: 4px 4px 0 darkgrey; */
+  figure a:active {
+    transform: translate(3px);
   }
 
   figure:hover figcaption {
