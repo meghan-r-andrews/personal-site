@@ -146,7 +146,7 @@ cursor: zoom-in;
 }
 
 .daisies-left, .daisies-right{
-    max-height: 287px;
+    max-height: 213px;
     width: auto;
   }
 
@@ -172,6 +172,10 @@ cursor: zoom-in;
   .dark .daisies-left {
     border: 1.3px solid white; 
     border-right: none;
+  }
+
+  .dark .image-description-link a {
+    color: rgb(151, 188, 252);
   }
 
   .dark .intro {
@@ -291,6 +295,17 @@ figure:hover {
     position: fixed;
     top: 15px;
     left: 15px;
+  }
+
+  .image-description-link {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 10px 0;
+    border: 1px solid;
+  }
+
+  .image-description-link:hover {
+    font-style: italic;
   }
 
   .image-descriptions {
@@ -431,9 +446,11 @@ figure:hover {
     width: 100%;
     height: auto;
     max-height: 100vh;
+/* 
+    background-color: #e6fdf6; */
+    background-color: rgba(47, 52, 50, 0.871);
+    /* background-image: url(pics/photos/daisies.jpg); */
 
-    /* background-color: #e6fdf6; */
-    background-image: url(pics/photos/daisies.jpg);
     background-size: cover;
     background-position:center;
     border: 1.3px solid;
